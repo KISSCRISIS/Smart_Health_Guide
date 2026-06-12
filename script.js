@@ -372,77 +372,85 @@ const PATHWAY_OPTIONS = [
 ];
 
 const ARTICLES = [
-  { id:1, cat:'emergency', icon:'🚨',
-    titleAr:'متى أتصل بـ 911؟',                titleEn:'When Should I Call 911?',
-    sumAr:'تعرف على المواقف التي تستدعي الاتصال الفوري.',sumEn:'Learn when to call emergency services immediately.',
-    bodyAr:`<h4>رقم الطوارئ في الأردن: 911</h4><p>يعمل على مدار الساعة.</p><h4>متى تتصل بـ 911؟</h4><ul><li>توقف التنفس أو توقف القلب</li><li>فقدان الوعي التام</li><li>نزيف شديد لا يمكن إيقافه</li><li>أعراض جلطة: ميلان الوجه، ضعف الذراع، صعوبة الكلام</li><li>ألم صدر شديد مفاجئ</li><li>ضيق تنفس شديد</li><li>حادث أو إصابة شديدة</li></ul><h4>ماذا تقول؟</h4><p>أخبر المجيب بموقعك، صف الحالة، واستمر بالحديث حتى وصول المساعدة.</p>`,
-    bodyEn:`<h4>Jordan's emergency number: 911</h4><p>Available 24/7.</p><h4>When to call 911?</h4><ul><li>Respiratory or cardiac arrest</li><li>Complete loss of consciousness</li><li>Severe uncontrolled bleeding</li><li>Stroke signs: face drooping, arm weakness, speech difficulty</li><li>Sudden severe chest pain</li><li>Severe shortness of breath</li><li>Severe accident or trauma</li></ul><h4>What to say?</h4><p>Give your location, describe the condition briefly, and stay on the line until help arrives.</p>`,
-    warnAr:'عند أي من هذه الأعراض، اتصل بـ 911 فورًا ولا تنتظر.',warnEn:'With any of these symptoms, call 911 immediately and do not wait.',
-    destAr:'911 والطوارئ فورًا',destEn:'911 and emergency immediately' },
-
-  { id:2, cat:'emergency', icon:'❤️',
-    titleAr:'علامات تحذيرية لألم الصدر',       titleEn:'Chest Pain Warning Signs',
-    sumAr:'ألم الصدر المفاجئ قد يكون علامة خطر.',sumEn:'Sudden chest pain can be a warning sign.',
-    bodyAr:`<h4>أعراض قد ترتبط بحالة عاجلة:</h4><ul><li>ألم صدر شديد مفاجئ</li><li>ألم ينتشر للذراع أو الفك</li><li>ضيق تنفس مصاحب</li><li>تعرق شديد مفاجئ</li><li>دوخة أو إغماء</li></ul><h4>مهم:</h4><p>لا تقد السيارة بنفسك. اطلب المساعدة فورًا أو اتصل بـ 911.</p>`,
-    bodyEn:`<h4>Symptoms that may be associated with urgent condition:</h4><ul><li>Sudden severe chest pain</li><li>Pain spreading to arm or jaw</li><li>Shortness of breath</li><li>Sudden heavy sweating</li><li>Dizziness or near-fainting</li></ul><h4>Important:</h4><p>Do not drive yourself. Ask for help immediately or call 911.</p>`,
-    warnAr:'ألم الصدر الشديد المفاجئ: اتصل بـ 911 فورًا.',warnEn:'Sudden severe chest pain: call 911 immediately.',
-    destAr:'911 والطوارئ فورًا',destEn:'911 and emergency immediately' },
-
-  { id:3, cat:'emergency', icon:'🧠',
-    titleAr:'علامات الجلطة الدماغية',          titleEn:'Stroke Warning Signs',
-    sumAr:'الجلطة الدماغية طارئة طبية. كل دقيقة مهمة.',sumEn:'Stroke is a medical emergency. Every minute counts.',
-    bodyAr:`<h4>اعرف علامات الجلطة: FAST</h4><ul><li><b>F - الوجه:</b> هل يميل؟</li><li><b>A - الذراعان:</b> هل يستطيع رفعهما معًا؟</li><li><b>S - الكلام:</b> هل متعثر؟</li><li><b>T - الوقت:</b> اتصل بـ 911 فورًا!</li></ul>`,
-    bodyEn:`<h4>Know stroke signs: FAST</h4><ul><li><b>F - Face:</b> Is one side drooping?</li><li><b>A - Arms:</b> Can they raise both evenly?</li><li><b>S - Speech:</b> Is it slurred?</li><li><b>T - Time:</b> Call 911 immediately!</li></ul>`,
-    warnAr:'اتصل بـ 911 فورًا. الوقت يساوي الدماغ.',warnEn:'Call 911 immediately. Time is brain.',
-    destAr:'911 والطوارئ فورًا',destEn:'911 and emergency immediately' },
-
-  { id:4, cat:'health-center', icon:'🏢',
-    titleAr:'متى أزور مركزًا صحيًا شاملاً؟',  titleEn:'When to Visit a Comprehensive Health Center?',
-    sumAr:'المراكز الصحية الشاملة للحالات المستقرة.',sumEn:'Health centers are for stable conditions.',
-    bodyAr:`<h4>الخدمات المتاحة:</h4><ul><li>التقييم الطبي الأولي</li><li>متابعة الأمراض المزمنة</li><li>صرف الأدوية المزمنة (حسب التوفر)</li><li>الفحوصات الأساسية</li><li>التطعيم</li><li>التحويل للعيادات الخارجية</li></ul><h4>متى تزوره؟</h4><ul><li>أعراض مستقرة</li><li>متابعة أمراض مزمنة</li><li>تجديد وصفة أو فحص روتيني</li></ul>`,
-    bodyEn:`<h4>Available services:</h4><ul><li>Initial medical assessment</li><li>Chronic disease follow-up</li><li>Chronic medication (subject to availability)</li><li>Basic tests</li><li>Vaccination</li><li>Outpatient referral</li></ul><h4>When to visit?</h4><ul><li>Stable symptoms</li><li>Chronic disease follow-up</li><li>Prescription refill or routine checkup</li></ul>`,
-    warnAr:'إذا تدهورت الأعراض فجأة، اذهب للطوارئ فورًا.',warnEn:'If symptoms suddenly worsen, go to emergency immediately.',
-    destAr:'المركز الصحي الشامل',destEn:'Comprehensive health center' },
-
   { id:5, cat:'awareness', icon:'💙',
-    titleAr:'قرارك قد ينقذ غيرك',             titleEn:'Your Decision May Save Someone Else',
-    sumAr:'وراء باب الطوارئ قد يكون شخص في خطر حقيقي.',sumEn:'Behind the emergency door someone in real danger may be waiting.',
-    bodyAr:`<h4>قرارك قد ينقذ غيرك</h4><p>الطوارئ نقطة إنقاذ الأرواح. عندما يتوجه كثيرون بحالات بسيطة، قد يتأخر وصول الفريق الطبي لحالة حرجة فعلًا.</p><h4>الطوارئ مخصصة لـ:</h4><ul><li>الحالات المهددة للحياة</li><li>الحالات التي قد تتدهور بسرعة</li><li>الإصابات الخطيرة</li></ul><p>للحالات المستقرة: المركز الصحي الشامل خيار أفضل وأسرع.</p>`,
-    bodyEn:`<h4>Your decision may save someone else</h4><p>Emergency is a lifesaving point. When many come with mild cases, the team may be delayed from a truly critical case.</p><h4>Emergency is for:</h4><ul><li>Life-threatening conditions</li><li>Conditions that may deteriorate quickly</li><li>Serious injuries</li></ul><p>For stable cases: a comprehensive health center is a better and faster option.</p>`,
-    warnAr:'إذا كانت لديك علامات خطر، اذهب للطوارئ فورًا.',warnEn:'If you have warning signs, go to emergency immediately.',
-    destAr:'حسب الحالة: مركز صحي للمستقرة — طوارئ للخطيرة',destEn:'Depends: health center for stable — emergency for serious' },
+    titleAr:'قرارك قد ينقذ غيرك', titleEn:'Your Decision May Save Someone Else',
+    sumAr:'اختيار الجهة الصحية المناسبة يساعدك ويساعد غيرك.', sumEn:'Choosing the right healthcare destination helps you and others.',
+    quickAr:['الطوارئ للحالات الخطيرة والمفاجئة.','الحالات البسيطة قد تكون أسرع في المركز الصحي أو العيادات.','اختيارك الصحيح يترك المجال للحالات الحرجة.'],
+    quickEn:['Emergency is for serious and sudden conditions.','Mild cases may be faster at health centers or clinics.','Your right choice leaves room for critical cases.'],
+    detailsAr:'عندما يراجع المريض الجهة المناسبة لحالته، يحصل على خدمة أنسب ويوفر وقتًا وجهدًا، ويساعد الكوادر الطبية على إعطاء الأولوية للحالات الأخطر.',
+    detailsEn:'When a patient visits the suitable destination for their condition, they receive more appropriate service and help medical teams prioritize more serious cases.',
+    actionAr:'إذا كانت حالتك مستقرة، ابدأ بالمركز الصحي أو العيادات. إذا ظهرت علامات خطر، توجّه للطوارئ فورًا.',
+    actionEn:'If your condition is stable, start with the health center or clinics. If warning signs appear, go to emergency immediately.',
+    destAr:'انتقل إلى خيار: الطوارئ أم المركز الصحي؟', destEn:'Go to: Emergency or Health Center?',
+    warnAr:'لا تؤخر طلب المساعدة عند وجود أعراض شديدة أو مفاجئة.', warnEn:'Do not delay seeking help if symptoms are severe or sudden.' },
 
-  { id:6, cat:'services', icon:'💊',
-    titleAr:'تجديد الوصفة والأدوية المزمنة',  titleEn:'Prescription Refills and Chronic Medications',
-    sumAr:'تجديد الوصفات عبر المركز الصحي، وليس الطوارئ.',sumEn:'Prescription refills go through health centers, not emergency.',
-    bodyAr:`<h4>أين أجدد وصفتي؟</h4><p>المركز الصحي الشامل هو المكان المناسب في معظم الحالات.</p><ul><li>أحضر الوصفة القديمة أو بطاقة الأدوية</li><li>سيقيّم الطبيب حالتك</li><li>بعض الأدوية المتخصصة قد تحتاج تحويلًا</li></ul><p>لا يضمن التطبيق توفر الدواء. يُنصح بالاتصال مسبقًا.</p>`,
-    bodyEn:`<h4>Where to refill my prescription?</h4><p>The comprehensive health center is the right place in most cases.</p><ul><li>Bring the old prescription or medication card</li><li>The doctor will assess your condition</li><li>Some specialized medications may need outpatient referral</li></ul><p>The app does not guarantee medication availability. Please call ahead.</p>`,
-    warnAr:'إذا نفدت الأدوية وظهرت أعراض خطيرة، اذهب للطوارئ فورًا.',warnEn:'If medication runs out and serious symptoms appear, go to emergency immediately.',
-    destAr:'المركز الصحي الشامل',destEn:'Comprehensive health center' },
+  { id:9, cat:'previsit', icon:'🩺',
+    titleAr:'كيف تستفيد من زيارتك للطبيب؟', titleEn:'How to Benefit from Your Doctor Visit?',
+    sumAr:'خطوات بسيطة تساعدك على شرح حالتك والحصول على تقييم أفضل.', sumEn:'Simple steps to explain your condition and get better assessment.',
+    quickAr:['اكتب متى بدأت الأعراض.','أحضر أسماء الأدوية أو صورها.','اسأل الطبيب عن علامات الخطر ومتى تراجع.'],
+    quickEn:['Write when symptoms started.','Bring medication names or photos.','Ask about warning signs and when to return.'],
+    detailsAr:'حضّر معلوماتك قبل الزيارة: مدة الأعراض، شدتها، الأمراض المزمنة، الحساسية الدوائية، الأدوية الحالية، والفحوصات أو التقارير السابقة إن وجدت.',
+    detailsEn:'Prepare your information before the visit: symptom duration, severity, chronic diseases, medication allergies, current medications, and previous reports if available.',
+    actionAr:'لا تغادر قبل أن تفهم طريقة استخدام العلاج وموعد المراجعة وعلامات الخطر.',
+    actionEn:'Do not leave before understanding how to use treatment, when to return, and warning signs.',
+    destAr:'المنشأة المناسبة حسب حالتك', destEn:'The suitable facility based on your condition',
+    warnAr:'إذا ظهرت أعراض شديدة أثناء الانتظار، أخبر الكادر الطبي فورًا.', warnEn:'If severe symptoms appear while waiting, inform staff immediately.' },
 
-  { id:7, cat:'emergency', icon:'🚪',
-    titleAr:'الطوارئ ليست الطريق الأسرع لكل الخدمات',titleEn:'Emergency Is Not the Fastest Route for Every Service',
-    sumAr:'لماذا قد تنتظر أطول في الطوارئ للحالات غير العاجلة؟',sumEn:'Why you may wait longer in emergency for non-urgent cases.',
-    bodyAr:`<h4>كيف يعمل الفرز الطبي؟</h4><p>في الطوارئ يتم الفرز حسب الخطورة، ليس وقت الوصول. الحالات الأقل خطورة قد تنتظر ساعات.</p><h4>المركز الصحي قد يكون أسرع لأن:</h4><ul><li>أوقات انتظار أقصر للحالات المستقرة</li><li>التقييم والعلاج والوصفة في مكان واحد</li></ul>`,
-    bodyEn:`<h4>How does triage work?</h4><p>In emergency, triage is based on severity, not arrival time. Less urgent cases may wait hours.</p><h4>Health center may be faster because:</h4><ul><li>Shorter wait times for stable cases</li><li>Assessment, treatment, and prescription in one place</li></ul>`,
-    warnAr:'الأعراض الخطيرة = الطوارئ فورًا.',warnEn:'Serious symptoms = emergency immediately.',
-    destAr:'المركز الصحي للحالات المستقرة',destEn:'Health center for stable cases' },
+  { id:10, cat:'previsit', icon:'📋',
+    titleAr:'قبل الذهاب إلى أي منشأة صحية', titleEn:'Before Visiting Any Health Facility',
+    sumAr:'ما الذي يجب أن تحضره معك قبل المراجعة؟', sumEn:'What should you bring before your visit?',
+    quickAr:['أحضر الهوية أو دفتر التأمين.','أحضر الوصفات والتقارير السابقة.','للأطفال: أحضر كرت المطاعيم عند الحاجة.'],
+    quickEn:['Bring ID or insurance booklet.','Bring previous prescriptions and reports.','For children: bring vaccination card when needed.'],
+    detailsAr:'وجود معلومات واضحة يساعد الطبيب على تقييم حالتك بدقة أكبر، خاصة إذا كنت تستخدم أدوية مزمنة أو لديك حساسية دوائية أو عمليات سابقة.',
+    detailsEn:'Clear information helps the doctor assess your condition more accurately, especially if you use chronic medications, have medication allergies, or prior operations.',
+    actionAr:'اكتب قائمة مختصرة بالأعراض والأدوية قبل الوصول.',
+    actionEn:'Write a short list of symptoms and medications before arriving.',
+    destAr:'أي منشأة صحية حسب نوع المراجعة', destEn:'Any health facility based on visit type',
+    warnAr:'لا تنسَ ذكر الحمل، الحساسية، الأمراض المزمنة، أو العمليات السابقة.', warnEn:'Do not forget to mention pregnancy, allergies, chronic diseases, or prior operations.' },
 
-  { id:8, cat:'health-center', icon:'🏥',
-    titleAr:'متى أراجع المركز الصحي بدل الطوارئ؟',titleEn:'When to Visit Health Center Instead of Emergency?',
-    sumAr:'دليل عملي للتمييز بين ما يحتاج طوارئ وما لا يحتاج.',sumEn:'Practical guide: emergency vs health center.',
-    bodyAr:`<h4>مناسب للمركز الصحي:</h4><ul><li>أعراض تنفسية بسيطة مستقرة</li><li>حرارة بدون أعراض خطيرة</li><li>آلام بسيطة مستقرة</li><li>متابعة أمراض مزمنة</li><li>تجديد وصفات، تطعيمات</li></ul><h4>يحتاج الطوارئ:</h4><ul><li>ألم صدر أو ضيق تنفس شديد</li><li>فقدان الوعي، نزيف شديد</li><li>علامات جلطة، إصابات خطيرة</li></ul>`,
-    bodyEn:`<h4>Suitable for health center:</h4><ul><li>Mild stable respiratory symptoms</li><li>Fever without serious symptoms</li><li>Mild stable pain</li><li>Chronic disease follow-up</li><li>Prescription refills, vaccinations</li></ul><h4>Needs emergency:</h4><ul><li>Severe chest pain or shortness of breath</li><li>Loss of consciousness, severe bleeding</li><li>Stroke signs, serious injuries</li></ul>`,
-    warnAr:'في حال الشك دائمًا توجه للطوارئ أو اتصل بـ 911.',warnEn:'When in doubt, always go to emergency or call 911.',
-    destAr:'المركز الصحي للمستقرة — الطوارئ للخطيرة',destEn:'Health center for stable — emergency for serious' }
+  { id:11, cat:'awareness', icon:'⏱️',
+    titleAr:'متى لا تنتظر؟', titleEn:'When Should You Not Wait?',
+    sumAr:'أعراض شديدة أو مفاجئة لا يجوز تأجيلها.', sumEn:'Severe or sudden symptoms should not be delayed.',
+    quickAr:['ألم صدر شديد أو مفاجئ.','ضيق نفس شديد أو فقدان وعي.','نزيف شديد أو ضعف مفاجئ في جهة من الجسم.'],
+    quickEn:['Severe or sudden chest pain.','Severe shortness of breath or loss of consciousness.','Severe bleeding or sudden weakness on one side.'],
+    detailsAr:'بعض الأعراض قد تدل على حالة خطيرة تحتاج تقييمًا عاجلًا. لا تنتظر موعدًا عاديًا إذا كانت الأعراض شديدة، مفاجئة، أو غير محتملة.',
+    detailsEn:'Some symptoms may indicate a serious condition that needs urgent assessment. Do not wait for a regular appointment if symptoms are severe, sudden, or intolerable.',
+    actionAr:'اتصل بـ 911 أو توجّه للطوارئ فورًا عند وجود علامات خطر.',
+    actionEn:'Call 911 or go to emergency immediately if warning signs exist.',
+    destAr:'911 والطوارئ فورًا', destEn:'911 and emergency immediately',
+    warnAr:'هذه الصفحة للتوعية فقط ولا تغني عن طلب المساعدة الطبية.', warnEn:'This page is for awareness only and does not replace seeking medical help.' },
+
+  { id:12, cat:'medication', icon:'💊',
+    titleAr:'الاستخدام الصحيح للأدوية', titleEn:'Safe Medication Use',
+    sumAr:'استخدم الدواء بوصفة واضحة، ولا تكرر أو توقف العلاج دون استشارة.', sumEn:'Use medicines with clear instructions; do not repeat or stop treatment without advice.',
+    quickAr:['لا تستخدم مضادًا حيويًا دون وصفة.','لا توقف علاج الضغط أو السكري دون مراجعة الطبيب.','لا تستخدم دواء شخص آخر.'],
+    quickEn:['Do not use antibiotics without prescription.','Do not stop hypertension or diabetes treatment without medical advice.','Do not use someone else’s medicine.'],
+    detailsAr:'الدواء الصحيح في المكان الصحيح وبالطريقة الصحيحة يحمي صحتك. تجنب تخزين كميات كبيرة من الأدوية أو تكرار صرفها من أكثر من جهة دون داعٍ.',
+    detailsEn:'The right medicine, in the right place, and in the right way protects your health. Avoid storing large medicine quantities or repeating refills from multiple places unnecessarily.',
+    actionAr:'اسأل الطبيب أو الصيدلي إذا لم تفهم الجرعة أو مدة العلاج.',
+    actionEn:'Ask the doctor or pharmacist if you do not understand dose or treatment duration.',
+    destAr:'لصرف الوصفات العملية راجع خيار: الطوارئ أم المركز الصحي؟', destEn:'For practical prescription guidance, see: Emergency or Health Center?',
+    warnAr:'لا تشارك الأدوية ولا تستخدم علاجًا منتهي الصلاحية.', warnEn:'Do not share medicines or use expired medication.' },
+
+  { id:13, cat:'awareness', icon:'📘',
+    titleAr:'الوعي الصحي يبدأ من المعلومة الواضحة', titleEn:'Health Awareness Starts with Clear Information',
+    sumAr:'معلومات مبسطة تساعدك على اتخاذ قرار صحي أفضل.', sumEn:'Simple information to help you make better health decisions.',
+    quickAr:['المعلومة الواضحة تقلل القلق.','التوجيه الصحيح يحسن تجربة المراجع.','التطبيق يساعدك ولا يشخّص حالتك.'],
+    quickEn:['Clear information reduces anxiety.','Correct guidance improves visitor experience.','The app helps guide you but does not diagnose.'],
+    detailsAr:'تهدف مكتبة التوعية إلى تبسيط المعلومات الصحية، ومساعدة المستخدم على فهم متى يطلب المساعدة، وكيف يستعد للزيارة، وكيف يستخدم الدواء بأمان.',
+    detailsEn:'The awareness library aims to simplify health information, helping users know when to seek help, how to prepare for visits, and how to use medication safely.',
+    actionAr:'اقرأ المعلومات المختصرة، وعند الشك أو وجود أعراض شديدة اطلب المساعدة الطبية.',
+    actionEn:'Read the short information, and if unsure or symptoms are severe, seek medical help.',
+    destAr:'حسب حالتك الصحية', destEn:'Based on your health condition',
+    warnAr:'هذه المعلومات للتوعية والإرشاد فقط.', warnEn:'This information is for awareness and guidance only.' }
 ];
 
 const ART_CATS = [
-  { id:'all',          ar:'الكل',              en:'All' },
-  { id:'emergency',    ar:'الطوارئ',           en:'Emergency' },
-  { id:'health-center',ar:'المراكز الصحية',    en:'Health Centers' },
-  { id:'awareness',    ar:'التوعية',           en:'Awareness' },
-  { id:'services',     ar:'الخدمات',           en:'Services' }
+  { id:'all',        ar:'الكل',                 en:'All' },
+  { id:'awareness',  ar:'التوعية العامة',       en:'General Awareness' },
+  { id:'previsit',   ar:'نصائح قبل المراجعة',  en:'Before Visit Tips' },
+  { id:'medication', ar:'السلامة الدوائية',     en:'Medication Safety' },
+  { id:'services',   ar:'الخدمات والمعلومات',   en:'Services & Info' }
 ];
 
 const MANUAL_AREAS = [
@@ -460,121 +468,6 @@ const MANUAL_AREAS = [
   { id:'maqabeleen', ar:'المقابلين',         en:'Al-Maqabeleen',         fid:'maqabeleen' }
 ];
 
-
-// ===== COMPREHENSIVE MEDICAL JOURNAL — separate from awareness library =====
-const MEDICAL_TOPICS = {
-  cast: {
-    icon:'🦴', titleAr:'الاستفسار عن الكسور / الجبيرة القديمة', titleEn:'Fractures / Old Cast Inquiry',
-    introAr:'معلومات إرشادية حول الجبيرة القديمة، إعادة التقييم، ومتى تكون الحالة طارئة.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'يساعد هذا القسم المراجع على فهم متى يحتاج مراجعة مركز صحي أو عيادة عظام بسبب جبيرة قديمة أو ألم بعد كسر سابق.'},
-      {h:'متى تراجع المركز الصحي أو عيادة العظام؟', p:'عند الحاجة إلى تقييم الجبيرة، ألم مستقر بعد كسر قديم، أو استفسار عن موعد إزالة الجبيرة أو المتابعة.'},
-      {h:'متى لا تنتظر؟', p:'إذا ظهر ألم شديد، تورم واضح، خدر، ازرقاق في الأصابع، برودة شديدة في الطرف، أو ضعف حركة مفاجئ، راجع الطوارئ فورًا.'}
-    ], dest:'المركز الصحي أو عيادة العظام للحالات المستقرة، والطوارئ عند علامات الخطر.'
-  },
-  dressing: {
-    icon:'🩹', titleAr:'العناية بالجروح / الغيار بعد العمليات السابقة', titleEn:'Wound Care / Post-op Dressing',
-    introAr:'إرشادات عامة حول غيار الجروح ومتابعة الجروح بعد العمليات السابقة.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'يوضح أين تتم غيارات الجروح ومتابعة الجروح بعد العمليات عند عدم وجود علامات خطورة.'},
-      {h:'مكان الإجراء والمتابعة', p:'غالبًا تتم غيارات الجروح في المركز الصحي أو عيادة الغيار أو العيادة التي تتابع الحالة، وليس في الطوارئ للحالات الروتينية.'},
-      {h:'متى تحتاج الطوارئ؟', p:'نزيف شديد، خروج قيح مع حرارة، ألم شديد متزايد، فتح الجرح بعد العملية، أو احمرار وتورم سريع حول الجرح.'}
-    ], dest:'المركز الصحي/عيادة الغيار للحالات المستقرة، والطوارئ عند النزيف أو علامات الالتهاب الشديد.'
-  },
-  report: {
-    icon:'📄', titleAr:'التقارير الطبية', titleEn:'Medical Reports',
-    introAr:'توضيح عام حول طلب التقارير الطبية غير القضائية والجهة المناسبة لذلك.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'التقارير الطبية تُطلب عادة من الطبيب المعالج أو العيادة المختصة التي تابعت الحالة.'},
-      {h:'أين أراجع؟', p:'راجع المركز الصحي أو العيادة المختصة أو قسم السجل الطبي حسب النظام المعمول به في المنشأة.'},
-      {h:'تنبيه مهم', p:'أقسام الطوارئ ليست مخصصة لإصدار التقارير الروتينية غير العاجلة.'}
-    ], dest:'العيادة المعالجة أو السجل الطبي حسب نوع التقرير.'
-  },
-  vaccination: {
-    icon:'💉', titleAr:'المطاعيم الطبية', titleEn:'Vaccinations',
-    introAr:'إرشادات عامة حول متابعة المطاعيم ومكان الحصول عليها.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'المطاعيم الوقائية والمتابعة الروتينية تكون غالبًا ضمن برامج المراكز الصحية أو عيادات المطاعيم.'},
-      {h:'أين أراجع؟', p:'راجع أقرب مركز صحي حسب منطقة السكن وأوقات الدوام، مع إحضار كرت المطاعيم إن وجد.'},
-      {h:'متى تصبح الحالة طارئة؟', p:'عند حدوث حساسية شديدة، ضيق نفس، تورم شديد في الوجه أو الحلق، أو تدهور سريع بعد المطعوم.'}
-    ], dest:'المراكز الصحية وعيادات المطاعيم، والطوارئ عند أعراض حساسية شديدة.'
-  },
-  prescription: {
-    icon:'💊', titleAr:'تجديد الوصفات الطبية / الأدوية المزمنة', titleEn:'Prescription Refills / Chronic Medications',
-    introAr:'توضيح أين تُجدد الوصفات والأدوية المزمنة المستقرة.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'تجديد أدوية الأمراض المزمنة المستقرة يكون عادة عبر المركز الصحي أو العيادات الخارجية حسب نوع العلاج والمتابعة.'},
-      {h:'ما الذي أحضره؟', p:'أحضر الوصفة القديمة، اسم الدواء أو صورته، بطاقة الأمراض المزمنة إن وجدت، وأي تقارير حديثة.'},
-      {h:'تنبيه مهم', p:'الطوارئ ليست المكان المناسب لتجديد العلاج الشهري، لكنها ضرورية إذا ظهرت أعراض خطيرة أو تدهور مفاجئ.'}
-    ], dest:'المركز الصحي للحالات المستقرة، والعيادات الخارجية للأدوية التخصصية.'
-  },
-  tests: {
-    icon:'🔬', titleAr:'الفحوصات المخبرية الشاملة ونتائجها', titleEn:'Laboratory Tests and Results',
-    introAr:'تعرف على دور الفحوصات، أين تُجرى، وكيفية متابعة النتائج إلكترونيًا عند توفر الخدمة.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'تساعد الفحوصات المخبرية الطبيب على تقييم الحالة الصحية، متابعة الأمراض المزمنة، أو طلب فحوصات دورية حسب الحاجة الطبية.'},
-      {h:'مكان الإجراء والمتابعة', p:'تُجرى الفحوصات الروتينية عادة في المراكز الصحية أو العيادات حسب توجيه الطبيب، بينما تُخصص فحوصات الطوارئ للحالات العاجلة والحرجة فقط.'},
-      {h:'تنبيه مهم للمراجع', p:'أقسام الطوارئ لا تقوم عادة بإجراء الفحوصات الروتينية أو تسليم نتائجها؛ فهي مخصصة للحالات الحرجة والتحاليل الإسعافية العاجلة.'}
-    ], dest:'المراكز الصحية أو العيادات للفحوصات الروتينية، والطوارئ للفحوصات الإسعافية العاجلة.',
-    links:true
-  },
-  referral: {
-    icon:'🏨', titleAr:'التحويلات الطبية / عيادات الاختصاص', titleEn:'Referrals / Specialist Clinics',
-    introAr:'إرشادات عامة حول التحويلات الطبية والمواعيد مع عيادات الاختصاص.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'التحويل الطبي يساعد على توجيه المراجع إلى عيادة اختصاص عند الحاجة لتقييم تخصصي.'},
-      {h:'أين أبدأ؟', p:'غالبًا يبدأ المراجع من المركز الصحي أو الطبيب المعالج، ثم يتم التحويل حسب الحاجة الطبية والنظام المعمول به.'},
-      {h:'متى لا أنتظر الموعد؟', p:'إذا ظهرت أعراض شديدة أو مفاجئة مثل ألم صدر، ضيق نفس، فقدان وعي، نزيف شديد أو علامات جلطة، يجب مراجعة الطوارئ فورًا.'}
-    ], dest:'المركز الصحي أو الطبيب المعالج لبدء التحويل، والطوارئ للحالات الخطيرة.'
-  },
-  sicklv: {
-    icon:'📝', titleAr:'الإجازات المرضية واعتمادها', titleEn:'Sick Leave and Approval',
-    introAr:'توضيح عام حول الإجازات المرضية ومن يقررها.',
-    sections:[
-      {h:'تعريف ووظيفة هذا القسم', p:'الإجازة المرضية قرار طبي وإداري يرتبط بتقييم الطبيب المعالج والتعليمات المعتمدة.'},
-      {h:'أين أراجع؟', p:'راجع الطبيب المعالج أو العيادة المناسبة حسب حالتك، ولا تراجع الطوارئ فقط للحصول على إجازة.'},
-      {h:'تنبيه مهم', p:'هذا التطبيق لا يمنح ولا يضمن الإجازات المرضية.'}
-    ], dest:'الطبيب المعالج أو العيادة المناسبة حسب الحالة.'
-  }
-};
-
-function initMedicalJournal() {
-  const c = document.getElementById('medical-journal-grid');
-  if (!c) return;
-  const order = ['vaccination','referral','sicklv','report','tests','prescription','cast','dressing'];
-  c.innerHTML = order.map(id => {
-    const t = MEDICAL_TOPICS[id];
-    return `<button class="med-topic-card" onclick="showMedicalTopic('${id}')"><span class="med-topic-icon">${t.icon}</span><span>${T(t.titleAr, t.titleEn)}</span><small>${T('اعرف المزيد', 'Learn more')}</small></button>`;
-  }).join('');
-}
-
-function showMedicalTopic(id) {
-  const t = MEDICAL_TOPICS[id];
-  if (!t) return;
-  let h = `<div class="medical-topic-page"><div class="medical-topic-head"><div class="medical-topic-icon-big">${t.icon}</div><h2>${T(t.titleAr, t.titleEn)}</h2><p>${T(t.introAr, t.titleEn)}</p></div>`;
-  h += `<div class="nav-actions top-nav-actions"><button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to previous page')}</button><button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to home')}</button></div>`;
-  t.sections.forEach(sec => { h += `<div class="info-card glow-card"><b>${sec.h}</b><p>${sec.p}</p></div>`; });
-  if (t.links) {
-    h += `<div class="info-card official-links-card"><b>🔗 ${T('متابعة النتائج إلكترونيًا','Follow results electronically')}</b><p>${T('عند توفر الخدمة، يمكن متابعة بعض النتائج والمعلومات عبر بوابة أو تطبيق حكيمي حسب المنشأة الصحية.','When available, some results and information can be followed through Hakeem/My Hakeem depending on the facility.')}</p><div class="link-btn-row"><a class="btn btn-primary" target="_blank" href="https://my.hakeem.jo/">بوابة حكيمي الإلكترونية</a><a class="btn btn-primary" target="_blank" href="https://my.hakeem.jo/">تطبيق My Hakeem</a><button class="btn btn-outline" onclick="showHakeemInstructions()">تعليمات التسجيل</button></div><div id="hakeem-instructions" class="hakeem-help" style="display:none"><b>تعليمات التسجيل:</b><p>قد تحتاج زيارة قسم السجل الطبي مرة واحدة للحصول على رمز التسجيل، ثم إنشاء الحساب عبر بوابة حكيمي أو تطبيق My Hakeem.</p></div></div>`;
-  }
-  h += `<div class="info-card"><b>📍 ${T('أين أتوجه؟','Where to go?')}</b><p>${t.dest}</p></div>`;
-  h += `<div class="disc-box"><b>⚠️ ${T('تنويه','Notice')}</b>${T('هذه المعلومات للتوعية فقط ولا تغني عن تقييم الطبيب.','This information is for awareness only and is not a substitute for medical assessment.')}</div>`;
-  h += `<div class="nav-actions"><button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to previous page')}</button><button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to home')}</button></div></div>`;
-  document.getElementById('medical-topic-detail').innerHTML = h;
-  go('s-medical-topic');
-}
-
-function showHakeemInstructions(){
-  const el = document.getElementById('hakeem-instructions');
-  if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
-}
-
-function serviceTopicButton(){
-  if (!S.svcType || !MEDICAL_TOPICS[S.svcType]) return '';
-  const t = MEDICAL_TOPICS[S.svcType];
-  return `<button class="btn btn-primary" style="margin-top:10px" onclick="showMedicalTopic('${S.svcType}')">📚 ${T('اعرف المزيد عن','Learn more about')} ${T(t.titleAr, t.titleEn)}</button>`;
-}
-
 // ===== NAVIGATION =====
 function go(screenId) {
   const cur = document.querySelector('.screen.active');
@@ -582,7 +475,7 @@ function go(screenId) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   const target = document.getElementById(screenId);
   if (target) { target.classList.add('active'); window.scrollTo(0, 0); }
-  document.body.classList.toggle('hide-watermarks', screenId === 's-supervision');
+  shgTrack('section_view', { section_id: screenId });
   applyText();
   initScreen(screenId);
 }
@@ -593,9 +486,7 @@ function back() {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     const t = document.getElementById(prev);
     if (t) { t.classList.add('active'); window.scrollTo(0, 0); }
-    document.body.classList.toggle('hide-watermarks', prev === 's-supervision');
     applyText();
-    initScreen(prev);
   } else {
     home();
   }
@@ -623,7 +514,6 @@ function initScreen(id) {
     's-danger':       initDanger,
     's-emergency-find': initEmergencyFind,
     's-library':      initLibrary,
-    's-medical-journal': initMedicalJournal,
     's-dyk':          initDYK,
     's-directory':    initDirectory,
     's-evening':      initEvening,
@@ -660,27 +550,8 @@ function applyText() {
 
 // ===== HOME =====
 function initHome() {
-  // Facebook button
-  const fbHome  = document.getElementById('fb-home-btn');
-  const fbAbout = document.getElementById('fb-about-btn');
-  const url    = S.settings.fb_url;
-  const active = S.settings.fb_active;
-  const fbHTML = active && url
-    ? `<a href="${url}" target="_blank" class="btn btn-facebook">📘 <span data-ar="صفحة الفيسبوك الرسمية" data-en="Official Facebook Page"></span></a>`
-    : '';
-  // Facebook shown in home menu as a home-btn, not on About page
-  if (fbHome) {
-    if (active && url) {
-      fbHome.innerHTML = `<a href="${url}" target="_blank" class="home-btn home-btn-outline" style="text-decoration:none">
-        <span class="home-btn-icon">📘</span>
-        <span class="home-btn-text" data-ar="تابعونا على صفحتنا الرسمية لمستشفى الإسعاف والطوارئ / البشير" data-en="Follow Our Official Facebook Page"></span>
-        <span class="home-btn-arrow">›</span>
-      </a>`;
-    } else {
-      fbHome.innerHTML = '';
-    }
-  }
-  // Facebook button intentionally removed from About page per design
+  const link = document.getElementById('fb-about-official');
+  if (link && S.settings.fb_url) link.href = S.settings.fb_url;
   applyText();
 }
 
@@ -973,14 +844,14 @@ function showResult() {
 
   // NE service message
   if (S.svcType && NE_MSGS[S.svcType]) {
-    h += `<div class="info-card"><b>💡 ${T('إرشاد الخدمة', 'Service Guidance')}</b><p>${T(NE_MSGS[S.svcType].ar, NE_MSGS[S.svcType].en)}</p>${serviceTopicButton()}</div>`;
+    h += `<div class="info-card"><b>💡 ${T('إرشاد الخدمة', 'Service Guidance')}</b><p>${T(NE_MSGS[S.svcType].ar, NE_MSGS[S.svcType].en)}</p></div>`;
   }
 
   // GPS section
   h += `<div class="gps-card">
     <p>📍 ${T('لإظهار أقرب منشأة مناسبة، اسمح للتطبيق باستخدام موقعك.', 'To show the nearest facility, allow the app to use your location.')}</p>
     <button class="btn btn-primary btn-sm" id="gps-btn" onclick="requestGPS()">📍 ${T('السماح بالموقع وإظهار الأقرب', 'Allow Location & Show Nearest')}</button>
-    <div class="gps-note">🔒 ${T('لن يتم حفظ موقعك — للجلسة الحالية فقط.', 'Location will not be stored — current session only.')}</div>
+    <div class="gps-note">🔒 ${T('لن يتم حفظ موقعك — للجلسة الحالية فقط. لتحسين الخدمة المقدمة فقط.', 'Location will not be stored — current session only, only to improve the service provided.')}</div>
   </div>`;
 
   // Facilities
@@ -1134,46 +1005,88 @@ function initEmergencyFind() {
   c.innerHTML = FACILITIES.filter(f => f.type === 'emergency_hospital').map((f, i) => renderFac(f, i === 0)).join('');
 }
 
+
+// ===== EMERGENCY OR HEALTH CENTER DETAILS =====
+function showCareDetail(type) {
+  const data = {
+    emergency: {
+      icon:'🚨', titleAr:'الطوارئ', titleEn:'Emergency', cls:'care-detail-emergency',
+      quickAr:['ألم صدر شديد أو مفاجئ، ضيق نفس شديد، فقدان وعي، نزيف شديد.','أعراض جلطة محتملة، حادث شديد، إصابة قوية، ألم شديد غير محتمل.','في الحالات الخطيرة لا تنتظر استخدام التطبيق.'],
+      quickEn:['Severe/sudden chest pain, severe shortness of breath, loss of consciousness, severe bleeding.','Possible stroke signs, severe accident, strong injury, intolerable pain.','In serious cases, do not wait to use the app.'],
+      benefitAr:['سرعة إنقاذ الحياة عبر أولوية الفرز الطبي.','توفر الإنعاش والعناية الحثيثة والتدخل العاجل عند الحاجة.','إمكانية الإدخال للمستشفى أو العمليات والفحوصات المتقدمة للحالات الحرجة.'],
+      benefitEn:['Life-saving speed through triage priority.','Resuscitation, ICU, and urgent intervention when needed.','Admission, surgery, and advanced testing for critical cases.'],
+      medsAr:'الأدوية في الطوارئ إسعافية للحالات الحادة حسب تقييم الطبيب، وليست لتجديد العلاجات الشهرية.',
+      medsEn:'Emergency medications are for acute cases based on medical assessment, not for monthly refill requests.'
+    },
+    center: {
+      icon:'🏥', titleAr:'المركز الصحي', titleEn:'Health Center', cls:'care-detail-center',
+      quickAr:['الرشح، التهاب الحلق البسيط، الحرارة الخفيفة دون علامات خطورة.','متابعة الضغط والسكري المستقر، المطاعيم، رعاية الأمومة والطفولة.','تجديد أدوية الأمراض المزمنة المستقرة حسب تقييم الطبيب.'],
+      quickEn:['Cold, simple sore throat, mild fever without warning signs.','Stable hypertension/diabetes follow-up, vaccines, maternal and child care.','Stable chronic medication refills based on doctor assessment.'],
+      benefitAr:['خدمة أقرب وأسرع للحالات البسيطة والمتوسطة.','متابعة مستمرة وملف صحي أوضح للمريض.','تخفيف الازدحام عن الطوارئ وإعطاء الأولوية للحالات الحرجة.'],
+      benefitEn:['Closer and faster service for mild/moderate cases.','Continuous follow-up and clearer health record.','Reducing ED crowding and preserving priority for critical cases.'],
+      medsAr:'المركز الصحي مناسب لتجديد أدوية الأمراض المزمنة المستقرة وأدوية الرعاية الأولية والمطاعيم حسب النظام والتوفر.',
+      medsEn:'Health centers are suitable for stable chronic medication refills, primary care medicines, and vaccines based on regulations and availability.'
+    },
+    clinic: {
+      icon:'🩺', titleAr:'العيادات المسائية / الخارجية', titleEn:'Evening / Outpatient Clinics', cls:'care-detail-clinic',
+      quickAr:['مواعيد الاختصاص والمتابعة غير الطارئة.','مراجعة نتائج الفحوصات والتحويلات الطبية.','الأدوية التخصصية أو الحالات المزمنة التي تحتاج طبيب اختصاص.'],
+      quickEn:['Specialist appointments and non-emergency follow-up.','Reviewing test results and medical referrals.','Specialized medications or chronic cases needing a specialist.'],
+      benefitAr:['تقييم أدق من طبيب الاختصاص.','تنظيم المراجعة عبر موعد بدل الانتظار العشوائي.','متابعة طويلة المدى للحالات المزمنة أو المعقدة.'],
+      benefitEn:['More specific assessment by a specialist.','Organized appointment instead of random waiting.','Long-term follow-up for chronic or complex cases.'],
+      medsAr:'العيادات الخارجية مناسبة للأدوية التخصصية والمتابعة مع طبيب اختصاص أو الحالات التي تحتاج تحويلًا أو موافقة حسب النظام.',
+      medsEn:'Outpatient clinics are suitable for specialized medications, specialist follow-up, referrals, or approvals based on regulations.'
+    }
+  }[type];
+  if (!data) return;
+  document.getElementById('care-detail-title').textContent = `${data.icon} ${T(data.titleAr, data.titleEn)}`;
+  const list = arr => `<ul>${arr.map(x => `<li>${x}</li>`).join('')}</ul>`;
+  document.getElementById('care-detail-content').innerHTML = `
+    <div class="care-detail-head ${data.cls}"><div class="care-detail-icon">${data.icon}</div><h2>${T(data.titleAr, data.titleEn)}</h2></div>
+    <div class="article-block"><h3>${T('متى أراجع هذه الجهة؟','When should I go there?')}</h3>${list(T(data.quickAr, data.quickEn))}</div>
+    <div class="article-block"><h3>${T('ماذا تستفيد؟','What do you benefit?')}</h3>${list(T(data.benefitAr, data.benefitEn))}</div>
+    <div class="article-block"><h3>${T('الأدوية والوصفات','Medications & Prescriptions')}</h3><p>${T(data.medsAr, data.medsEn)}</p></div>
+    <div class="disc-box"><b>${T('تنبيه مهم','Important Notice')}</b>${T('هذا الدليل للتوعية والإرشاد فقط ولا يغني عن تقييم الطبيب. عند وجود أعراض شديدة أو مفاجئة، توجّه للطوارئ فورًا أو اتصل بـ 911.', 'This guide is for awareness only and does not replace medical evaluation. If symptoms are severe or sudden, go to emergency or call 911 immediately.')}</div>
+    <a href="tel:911" class="btn btn-red">📞 ${T('اتصل بـ 911 عند الطوارئ','Call 911 in Emergencies')}</a>
+    <button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to Previous Page')}</button>
+    <button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to Home')}</button>
+  `;
+  go('s-care-detail');
+}
+
 // ===== LIBRARY =====
 let libCat = 'all';
 function initLibrary() {
   const tabs = document.getElementById('lib-tabs');
-  const libraryCats = [
-    { id:'all', ar:'الكل', en:'All' },
-    { id:'awareness', ar:'التوعية العامة', en:'Awareness' },
-    { id:'tips', ar:'نصائح قبل المراجعة', en:'Before Visit Tips' },
-    { id:'medsafety', ar:'السلامة الدوائية', en:'Medication Safety' },
-    { id:'info', ar:'الخدمات والمعلومات', en:'Services & Information' }
-  ];
-  tabs.innerHTML = libraryCats.map(c => `<button class="tab-btn ${c.id === libCat ? 'active' : ''}" onclick="setLibCat('${c.id}')">${T(c.ar, c.en)}</button>`).join('');
+  tabs.innerHTML = ART_CATS.map(c =>
+    `<button class="tab-btn ${c.id === libCat ? 'active' : ''}" onclick="setLibCat('${c.id}')">${T(c.ar, c.en)}</button>`
+  ).join('');
 
-  const cards = [
-    {cat:'info', icon:'🗂️', titleAr:'دليل المنشآت الصحية', titleEn:'Healthcare Facility Directory', sumAr:'استعرض المنشآت والروابط المتاحة.', sumEn:'Browse available facilities and links.', action:"go('s-directory')"},
-    {cat:'info', icon:'🌙', titleAr:'الدوام المسائي حول مستشفى البشير', titleEn:'Evening Hours Around Al-Bashir', sumAr:'معلومات عن المراكز ذات الدوام المسائي.', sumEn:'Information about evening-hour centers.', action:"go('s-evening')"},
-    {cat:'awareness', icon:'💡', titleAr:'هل تعلم؟', titleEn:'Did You Know?', sumAr:'أرقام وحقائق رسمية لفهم الضغط على الخدمات الصحية.', sumEn:'Numbers and facts about healthcare service pressure.', action:"go('s-dyk')"},
-    {cat:'awareness', icon:'💙', titleAr:'قرارك قد ينقذ غيرك', titleEn:'Your decision may save someone else', sumAr:'اختيار الجهة المناسبة يساعد الحالات الحرجة.', sumEn:'Choosing the right destination helps critical cases.', action:"showArticle(5)"},
-    {cat:'tips', icon:'🩺', titleAr:'كيف تستفيد من زيارتك للطبيب؟', titleEn:'How to benefit from your doctor visit?', sumAr:'حضّر أعراضك وأدويتك وأسئلتك قبل الزيارة.', sumEn:'Prepare your symptoms, medicines and questions.', custom:'doctorVisit'},
-    {cat:'tips', icon:'📋', titleAr:'قبل الذهاب إلى أي منشأة صحية', titleEn:'Before visiting any health facility', sumAr:'ما الذي يجب إحضاره قبل المراجعة؟', sumEn:'What should you bring before your visit?', custom:'beforeVisit'},
-    {cat:'awareness', icon:'⏱️', titleAr:'متى لا تنتظر؟', titleEn:'When not to wait?', sumAr:'أعراض شديدة أو مفاجئة لا يجوز تأجيلها.', sumEn:'Severe or sudden symptoms should not be delayed.', custom:'dontWait'},
-    {cat:'medsafety', icon:'💊', titleAr:'الاستخدام الصحيح للأدوية', titleEn:'Correct medication use', sumAr:'لا تستخدم أو توقف أو تكرر الدواء دون استشارة.', sumEn:'Do not use, stop or repeat medicine without advice.', custom:'medSafety'}
-  ];
   const c = document.getElementById('lib-content');
-  const shown = libCat === 'all' ? cards : cards.filter(x => x.cat === libCat);
-  c.innerHTML = `<div class="library-hero"><h2>${T('مكتبة التوعية الصحية','Health Education Library')}</h2><p>${T('معلومات صحية مبسطة وموثوقة تساعدك على التصرف بشكل أفضل عند الحاجة.','Simple reliable health information to help you act better when needed.')}</p></div>` +
-    shown.map(card => `<button class="library-new-card" onclick="${card.custom ? `showLibraryCustom('${card.custom}')` : card.action}"><span class="library-new-icon">${card.icon}</span><span><b>${T(card.titleAr, card.titleEn)}</b><small>${T(card.sumAr, card.sumEn)}</small></span><em>${T('اقرأ المزيد','Read more')} ›</em></button>`).join('');
-}
+  let h = `<div class="library-hero-card">
+    <h2>${T('مكتبة التوعية الصحية', 'Health Awareness Library')}</h2>
+    <p>${T('معلومات صحية مبسطة وموثوقة تساعدك على فهم الخدمات الصحية والتصرف بشكل أفضل عند الحاجة.', 'Simple trusted health information to help you understand services and act better when needed.')}</p>
+  </div>`;
 
+  h += `<div class="library-quick-grid">
+    <button class="library-mini-card" onclick="go('s-dyk')"><span>💡</span><b>${T('هل تعلم؟', 'Did You Know?')}</b><small>${T('أرقام وحقائق رسمية مؤثرة', 'Official impactful facts')}</small></button>
+    <button class="library-mini-card" onclick="go('s-directory')"><span>🗂️</span><b>${T('دليل المنشآت الصحية', 'Facility Directory')}</b><small>${T('روابط ومعلومات خدماتية', 'Service information and links')}</small></button>
+    <button class="library-mini-card" onclick="go('s-evening')"><span>🌙</span><b>${T('الدوام المسائي', 'Evening Hours')}</b><small>${T('الخدمات المسائية حول البشير', 'Evening services around Al-Bashir')}</small></button>
+  </div>`;
 
-function showLibraryCustom(type) {
-  const data = {
-    doctorVisit: {icon:'🩺', title:'كيف تستفيد من زيارتك للطبيب؟', quick:['اكتب أعراضك قبل الزيارة.','أحضر قائمة الأدوية والحساسيات.','اسأل عن علامات الخطر ومتى تراجع.'], details:['متى بدأت الأعراض؟ هل تتحسن أم تزداد؟','ما الأدوية التي تستخدمها حاليًا؟','هل لديك أمراض مزمنة أو تقارير سابقة؟']},
-    beforeVisit: {icon:'📋', title:'قبل الذهاب إلى أي منشأة صحية', quick:['أحضر الهوية أو دفتر التأمين إن وجد.','أحضر الوصفات والتقارير السابقة.','للأطفال: أحضر كرت المطاعيم عند الحاجة.'], details:['اكتب أسماء الأدوية أو صوّرها.','اذكر الحمل أو العمليات السابقة أو الحساسية.','كلما كانت معلوماتك أوضح كان تقييمك أسرع.']},
-    dontWait: {icon:'⏱️', title:'متى لا تنتظر؟', quick:['ألم صدر شديد أو مفاجئ.','ضيق نفس شديد أو فقدان وعي.','نزيف شديد أو ضعف مفاجئ بجهة من الجسم.'], details:['في هذه الحالات اتصل بـ 911 أو توجه للطوارئ فورًا.','لا تنتظر موعدًا عاديًا إذا كانت الأعراض شديدة أو مفاجئة.']},
-    medSafety: {icon:'💊', title:'الاستخدام الصحيح للأدوية', quick:['لا تستخدم مضادًا حيويًا دون وصفة.','لا توقف علاج الضغط أو السكري دون طبيب.','لا تكرر صرف الدواء من أكثر من جهة دون داعٍ.'], details:['اسأل الطبيب أو الصيدلي إذا لم تفهم طريقة الاستخدام.','لا تستخدم دواء شخص آخر حتى لو تشابهت الأعراض.','لا تحتفظ بكميات كبيرة من الأدوية في المنزل.']}
-  }[type];
-  if (!data) return;
-  document.getElementById('article-detail').innerHTML = `<div class="article-modern"><div class="article-head"><div class="article-icon-big">${data.icon}</div><h2>${data.title}</h2><span>${T('التوعية الصحية','Health awareness')}</span></div><div class="info-card glow-card"><b>${T('الخلاصة السريعة','Quick summary')}</b><ul>${data.quick.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="info-card"><b>${T('التفاصيل','Details')}</b><ul>${data.details.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="disc-box"><b>⚠️ ${T('تنبيه مهم','Important notice')}</b>${T('هذه المعلومات للتوعية فقط ولا تغني عن تقييم الطبيب.','This information is for awareness only and is not a substitute for medical assessment.')}</div><div class="nav-actions"><button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to previous page')}</button><button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to home')}</button></div></div>`;
-  go('s-article');
+  const arts = libCat === 'all' ? ARTICLES : ARTICLES.filter(a => a.cat === libCat);
+  arts.forEach(a => {
+    const cat = ART_CATS.find(x => x.id === a.cat);
+    h += `<div class="art-card new-art-card" onclick="showArticle(${a.id})">
+      <div class="art-icon">${a.icon}</div>
+      <div class="art-main">
+        <div class="art-cat">${cat ? T(cat.ar, cat.en) : ''}</div>
+        <div class="art-title">${T(a.titleAr, a.titleEn)}</div>
+        <div class="art-sum">${T(a.sumAr, a.sumEn)}</div>
+      </div>
+      <span class="art-arrow">›</span>
+    </div>`;
+  });
+  c.innerHTML = h;
 }
 
 function setLibCat(cat) { libCat = cat; initLibrary(); }
@@ -1182,63 +1095,44 @@ function showArticle(id) {
   const a = ARTICLES.find(x => x.id === id);
   if (!a) return;
   const cat = ART_CATS.find(x => x.id === a.cat);
+  const quick = T(a.quickAr || [], a.quickEn || []);
+  const qHtml = quick.length ? `<ul>${quick.map(x => `<li>${x}</li>`).join('')}</ul>` : '';
   document.getElementById('article-detail').innerHTML = `
-    <div class="article-modern">
-      <div class="article-head"><div class="article-icon-big">${a.icon}</div><h2>${T(a.titleAr, a.titleEn)}</h2><span>${cat ? T(cat.ar, cat.en) : ''}</span></div>
-      <div class="info-card glow-card"><b>${T('الخلاصة السريعة', 'Quick summary')}</b><p>${T(a.sumAr, a.sumEn)}</p></div>
-      <div class="info-card"><b>${T('التفاصيل', 'Details')}</b><div class="art-body">${T(a.bodyAr, a.bodyEn)}</div></div>
-      <div class="info-card card-red"><b>⚠️ ${T('تنبيه مهم', 'Important Warning')}</b><p>${T(a.warnAr, a.warnEn)}</p></div>
-      <div class="info-card"><b>📍 ${T('أين تتوجه؟', 'Where to Go?')}</b><p>${T(a.destAr, a.destEn)}</p></div>
-      <div class="disc-box"><b>${T('⚠️ إخلاء مسؤولية', '⚠️ Disclaimer')}</b>${T('هذه المعلومات للتوعية فقط وليست بديلًا عن الطبيب.', 'This information is for awareness only and is not a substitute for a doctor.')}</div>
-      <p style="text-align:center;font-size:12px;color:var(--gray-400);margin-top:8px">${T('آخر مراجعة:', 'Last review:')} 2025</p>
-      ${a.cat === 'emergency' ? `<a href="tel:911" class="btn btn-red" style="margin-top:12px">📞 ${T('اتصل بـ 911 في الطوارئ', 'Call 911 in Emergencies')}</a>` : ''}
-      <div class="nav-actions"><button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to previous page')}</button><button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to home')}</button></div>
-    </div>`;
+    <div class="article-head">
+      <div class="article-head-icon">${a.icon}</div>
+      <h2>${T(a.titleAr, a.titleEn)}</h2>
+      <span class="art-cat">${cat ? T(cat.ar, cat.en) : ''}</span>
+      <p>${T(a.sumAr, a.sumEn)}</p>
+    </div>
+    <div class="article-block article-summary"><h3>${T('الخلاصة السريعة','Quick Summary')}</h3>${qHtml}</div>
+    <div class="article-block"><h3>${T('التفاصيل','Details')}</h3><p>${T(a.detailsAr || '', a.detailsEn || '')}</p></div>
+    <div class="article-block"><h3>${T('ماذا أفعل؟','What should I do?')}</h3><p>${T(a.actionAr || '', a.actionEn || '')}</p></div>
+    <div class="article-block"><h3>${T('أين أتوجه؟','Where to go?')}</h3><p>${T(a.destAr || '', a.destEn || '')}</p>${a.destAr && a.destAr.includes('الطوارئ أم المركز الصحي') ? `<button class="btn btn-secondary btn-sm" onclick="go('s-er-vs-center')">🚦 ${T('الطوارئ أم المركز الصحي؟','Emergency or Health Center?')}</button>` : ''}</div>
+    <div class="disc-box"><b>${T('تنبيه مهم','Important Notice')}</b>${T(a.warnAr || 'هذه المعلومات للتوعية فقط وليست بديلاً عن الطبيب.', a.warnEn || 'This information is for awareness only and not a substitute for a doctor.')}</div>
+    <p class="article-review">${T('آخر مراجعة:', 'Last review:')} 2025</p>
+    <button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to Previous Page')}</button>
+    <button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to Home')}</button>
+  `;
   go('s-article');
 }
-
 
 // ===== DID YOU KNOW =====
 function initDYK() {
   const stats = [
-    { stat:'~2M', title:'ملايين المراجعات سنويًا', text:'مستشفيات البشير تستقبل سنويًا حوالي 1.5 إلى 2 مليون مراجع.', meaning:'اختيار الجهة المناسبة يساعد على تخفيف الضغط وتحسين الوصول للخدمة.' },
-    { stat:'~650K', title:'ضغط كبير على الطوارئ سنويًا', text:'قسم الإسعاف والطوارئ يستقبل سنويًا حوالي 600–650 ألف مراجع.', meaning:'الحالات غير الطارئة قد تنتظر أطول لأن الأولوية للأخطر.' },
-    { stat:'~3000', title:'ضغط يومي على طوارئ البشير', text:'طوارئ البشير تستقبل نحو 3000 مراجع يوميًا.', meaning:'إذا كانت حالتك بسيطة، فقد يكون المركز الصحي أسرع وأنسب.' },
-    { stat:'~65%', title:'كثير من الحالات بسيطة', text:'حوالي 65% من الحالات تُصنف ضمن الحالات البسيطة التي يمكن التعامل معها في المراكز الصحية.', meaning:'المركز الصحي ليس خيارًا ثانويًا دائمًا؛ قد يكون هو الأنسب.' },
-    { stat:'70–75%', title:'ليست كل الحالات طارئة', text:'حوالي 70–75% من الحالات قد تكون من المستوى الرابع والخامس غير عاجلة.', meaning:'الفرز يعطي الأولوية للحالات الحرجة، لذلك الانتظار للحالات البسيطة متوقع.' },
-    { stat:'~250', title:'إدخالات يومية من الطوارئ', text:'حوالي 250 حالة إدخال يوميًا تأتي من الطوارئ.', meaning:'موارد الطوارئ يجب أن تبقى متاحة للحالات التي تحتاج إدخالًا أو تدخلًا عاجلًا.' }
+    { stat:'~2M', titleAr:'مراجعات سنوية ضخمة', titleEn:'Huge Annual Visits', ar:'مستشفيات البشير تستقبل سنويًا حوالي 1.5 إلى 2 مليون مراجع.', en:'Al-Bashir hospitals receive approximately 1.5–2 million visitors annually.', meaningAr:'هذا يوضح حجم الضغط على منظومة الخدمة.', meaningEn:'This shows the pressure on the service system.' },
+    { stat:'~650K', titleAr:'ضغط كبير على الطوارئ سنويًا', titleEn:'Major ED Pressure Annually', ar:'قسم الإسعاف والطوارئ يستقبل سنويًا حوالي 600–650 ألف مراجع.', en:'The emergency department receives approximately 600–650 thousand visitors annually.', meaningAr:'اختيار الجهة الصحيحة يساعد الطوارئ على خدمة الحالات الأخطر.', meaningEn:'Choosing the right destination helps the ED serve critical cases.' },
+    { stat:'~3000', titleAr:'مراجعون يوميًا', titleEn:'Daily Visitors', ar:'طوارئ البشير تستقبل نحو 3000 مراجع يوميًا.', en:'Al-Bashir emergency receives approximately 3,000 visitors daily.', meaningAr:'الحالة البسيطة قد تنتظر أطول لأن الأولوية للحالات الحرجة.', meaningEn:'Mild cases may wait longer because priority goes to critical cases.' },
+    { stat:'~65%', titleAr:'كثير من الحالات قد لا تحتاج طوارئ', titleEn:'Many Cases May Not Need ED', ar:'حوالي 65% من الحالات تُصنف ضمن الحالات البسيطة التي يمكن التعامل معها في المراكز الصحية.', en:'Approximately 65% of cases are classified as simple cases handleable at health centers.', meaningAr:'المركز الصحي قد يكون أسرع وأنسب لكثير من المراجعين.', meaningEn:'Health centers may be faster and more suitable for many visitors.' },
+    { stat:'70–75%', titleAr:'حالات أقل استعجالًا', titleEn:'Less Urgent Cases', ar:'حوالي 70–75% من الحالات قد تكون من المستوى الرابع والخامس (غير عاجلة).', en:'Approximately 70–75% of cases may be at triage level 4 or 5 (non-urgent).', meaningAr:'الفرز الطبي لا يعتمد على وقت الوصول فقط بل على الخطورة.', meaningEn:'Triage depends on severity, not only arrival time.' },
+    { stat:'~250', titleAr:'إدخالات يومية من الطوارئ', titleEn:'Daily Admissions from ED', ar:'حوالي 250 حالة إدخال يوميًا تأتي من الطوارئ.', en:'Approximately 250 admission cases daily come from emergency.', meaningAr:'هذا يوضح أن الطوارئ تتعامل مع حالات تحتاج موارد كبيرة.', meaningEn:'This shows ED handles cases requiring major resources.' }
   ];
-  let h = `<div class="dyk-hero"><h2>${T('هل تعلم؟ أرقام تكشف حجم الضغط على الخدمات الصحية','Did you know? Numbers that reveal healthcare pressure')}</h2><p>${T('هذه الأرقام توضّح لماذا يساعد اختيار الجهة الصحية المناسبة في تقليل الازدحام وتحسين وصول الخدمة لمن يحتاجها فعلًا.','These numbers explain why choosing the right healthcare destination reduces crowding and helps those who truly need urgent care.')}</p></div>`;
-  stats.forEach(s => { h += `<div class="dyk-impact-card"><div class="dyk-big">${s.stat}</div><div><h3>${s.title}</h3><p>${s.text}</p><b>${T('ماذا يعني لك؟','What does it mean for you?')}</b><p>${s.meaning}</p></div></div>`; });
-  h += `<div class="disc-box">${T('تُستخدم الأرقام للتوعية وفهم حجم الضغط على الخدمات، ويجب تحديثها عند توفر مصادر رسمية أحدث.','Numbers are used for awareness and should be updated when newer official sources are available.')}</div>`;
-  h += `<div class="nav-actions"><button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to previous page')}</button><button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to home')}</button></div>`;
+  let h = `<div class="dyk-hero"><h2>${T('هل تعلم؟ أرقام تكشف حجم الضغط', 'Did You Know? Numbers Reveal the Pressure')}</h2><p>${T('هذه الأرقام توضّح لماذا يساعد اختيار الجهة الصحية المناسبة في تحسين وصول الخدمة لمن يحتاجها فعلاً.', 'These numbers show why choosing the right destination helps service reach those who truly need it.')}</p></div>`;
+  stats.forEach(s => {
+    h += `<div class="dyk-impact-card"><div class="dyk-stat">${s.stat}</div><div class="dyk-body"><h3>${T(s.titleAr, s.titleEn)}</h3><p>${T(s.ar, s.en)}</p><div class="dyk-meaning"><b>${T('ماذا يعني لك؟','What does this mean for you?')}</b><span>${T(s.meaningAr, s.meaningEn)}</span></div></div></div>`;
+  });
+  h += `<div class="disc-box"><b>${T('ملاحظة توثيقية','Documentation Note')}</b>${T('تُعرض الأرقام في التطبيق فقط عند اعتمادها من مصادر موثوقة أو رسمية ضمن بيانات المشروع.', 'Numbers are displayed only when adopted from trusted or official sources within the project data.')}</div>`;
+  h += `<button class="btn btn-outline" onclick="back()">← ${T('الرجوع إلى الصفحة السابقة','Back to Previous Page')}</button><button class="btn btn-primary" onclick="home()">🏠 ${T('العودة إلى الصفحة الرئيسية','Return to Home')}</button>`;
   document.getElementById('dyk-content').innerHTML = h;
-}
-
-
-
-function showErVsCenterDetail(type) {
-  const box = document.getElementById('er-vs-detail');
-  const data = {
-    emergency: {title:'🚨 الطوارئ', cls:'er-detail-emergency', sections:[
-      ['متى أذهب إلى الطوارئ؟','عند وجود ألم صدر شديد، ضيق نفس شديد، فقدان وعي، نزيف شديد، أعراض جلطة، حادث أو إصابة قوية، حروق كبيرة، ألم شديد غير محتمل، أو تدهور سريع في الحالة العامة.'],
-      ['ماذا تستفيد عند مراجعة الطوارئ في الحالة الحرجة؟','سرعة إنقاذ الحياة، فرز طبي حسب الأولوية، إمكانية الإنعاش، الإدخال للمستشفى أو العمليات، والفحوصات المتقدمة عند الحاجة.'],
-      ['أمثلة مهمة','الإصابات والحوادث، السقوط والكسور المعقدة، آلام الصدر، الاشتباه بجلطة، ضيق النفس الحاد، ألم البطن الشديد، المغص الكلوي الحاد، نوبات الربو الشديدة.']
-    ]},
-    center: {title:'🏥 المركز الصحي', cls:'er-detail-center', sections:[
-      ['متى أراجع المركز الصحي؟','عند الرشح، التهاب الحلق البسيط، الحرارة الخفيفة دون علامات خطورة، آلام العضلات أو الظهر الخفيفة، المتابعة العامة، المطاعيم، وتجديد أدوية الأمراض المزمنة المستقرة.'],
-      ['ماذا يقدم المركز الصحي الشامل؟','تقييم طبي للحالات البسيطة والمتوسطة، علاج أولي، متابعة الأمراض المزمنة، أدوية الرعاية الأولية، مطاعيم، وقد يثبت بعض الحالات مؤقتًا ويحوّلها إذا لزم.'],
-      ['لماذا قد يكون أسرع؟','في الطوارئ الأولوية للحالات الحرجة. لذلك الحالات البسيطة قد تنتظر أطول، بينما يكون المركز الصحي أنسب وأسرع لكثير من الحالات المستقرة.']
-    ]},
-    clinic: {title:'🩺 العيادات المسائية / الخارجية', cls:'er-detail-clinic', sections:[
-      ['متى أراجع العيادات؟','عند الحاجة لموعد اختصاص، مراجعة نتائج، متابعة مرض مزمن، استشارة تخصصية، تحويل طبي، أو أدوية تخصصية تحتاج طبيب اختصاص.'],
-      ['ماذا تستفيد؟','تنظيم المواعيد، مراجعة طبيب اختصاص، متابعة دقيقة للحالات المزمنة أو المعقدة، وصرف أدوية تخصصية حسب النظام.'],
-      ['تنبيه مهم','العيادات ليست مخصصة للحالات الحرجة أو المفاجئة. عند ظهور علامات خطر توجّه للطوارئ فورًا.']
-    ]}
-  }[type];
-  if (!data) return;
-  box.innerHTML = `<div class="er-detail-box ${data.cls}"><h2>${data.title}</h2>${data.sections.map(s=>`<div class="info-card glow-card"><b>${s[0]}</b><p>${s[1]}</p></div>`).join('')}<div class="disc-box">هذا الدليل للتوعية والإرشاد فقط، ولا يغني عن تقييم الطبيب.</div></div>`;
-  box.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 // ===== DIRECTORY =====
@@ -1298,33 +1192,123 @@ function initEvening() {
   document.getElementById('evening-content').innerHTML = h;
 }
 
-// ===== CONTACT =====
-function setContactMode(mode) {
-  const isTech = mode === 'tech';
-  document.getElementById('ct-tab-tech')?.classList.toggle('active', isTech);
-  document.getElementById('ct-tab-thanks')?.classList.toggle('active', !isTech);
-  document.getElementById('contact-tech-form')?.classList.toggle('active', isTech);
-  document.getElementById('contact-thanks-form')?.classList.toggle('active', !isTech);
+
+// ===== EXTERNAL CONNECTIONS: GOOGLE ANALYTICS + GOOGLE SHEETS =====
+// بعد إنشاء Google Apps Script، ضعي رابط Web App بين علامتي التنصيص هنا.
+// مثال: const SHG_APPS_SCRIPT_URL = "https://script.google.com/macros/s/XXXX/exec";
+const SHG_APPS_SCRIPT_URL = "";
+
+function shgTrack(eventName, params = {}) {
+  try {
+    if (typeof gtag === "function") {
+      gtag("event", eventName, params);
+    }
+  } catch (e) {}
 }
 
-function submitContact(mode='tech') {
-  const success = document.getElementById('ct-success');
-  const item = { id: Date.now(), mode, createdAt: new Date().toISOString() };
-  if (mode === 'thanks') {
-    item.type = document.getElementById('ct-thanks-type')?.value || 'thanks';
-    item.msg = document.getElementById('ct-thanks-msg')?.value || '';
-    item.name = document.getElementById('ct-thanks-name')?.value || '';
-    item.phone = document.getElementById('ct-thanks-phone')?.value || '';
-    item.email = document.getElementById('ct-thanks-email')?.value || '';
-    item.area = document.getElementById('ct-thanks-area')?.value || '';
-  } else {
-    item.type = document.getElementById('ct-type')?.value || 'other';
-    item.msg = document.getElementById('ct-msg')?.value || '';
-    item.name = document.getElementById('ct-name')?.value || '';
+async function sendToGoogleSheet(payload) {
+  const fullPayload = {
+    app: "Smart Health Guide",
+    source: "web_app_internal",
+    page: document.querySelector('.screen.active')?.id || "unknown",
+    language: S.lang || "ar",
+    createdAt: new Date().toISOString(),
+    ...payload
+  };
+
+  // نسخة احتياطية داخل المتصفح في حال لم يتم تركيب رابط Apps Script بعد.
+  const outbox = JSON.parse(localStorage.getItem("shg_pending_submissions") || "[]");
+
+  if (!SHG_APPS_SCRIPT_URL) {
+    outbox.push({ ...fullPayload, syncStatus: "pending_no_apps_script_url" });
+    localStorage.setItem("shg_pending_submissions", JSON.stringify(outbox));
+    return { ok: false, localOnly: true };
   }
-  S.reports.push(item);
+
+  try {
+    // no-cors يمنع قراءة الرد، لكنه يسمح بالإرسال إلى Apps Script من موقع Netlify.
+    await fetch(SHG_APPS_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(fullPayload)
+    });
+    return { ok: true };
+  } catch (error) {
+    outbox.push({ ...fullPayload, syncStatus: "failed", error: String(error) });
+    localStorage.setItem("shg_pending_submissions", JSON.stringify(outbox));
+    return { ok: false, error };
+  }
+}
+
+// ===== CONTACT =====
+function showContactPanel(panel) {
+  shgTrack('contact_tab_select', { tab: panel === 'thanks' ? 'thanks_suggestion' : 'technical_report' });
+  document.getElementById('tab-tech')?.classList.toggle('active', panel === 'tech');
+  document.getElementById('tab-thanks')?.classList.toggle('active', panel === 'thanks');
+  document.getElementById('panel-tech')?.classList.toggle('active', panel === 'tech');
+  document.getElementById('panel-thanks')?.classList.toggle('active', panel === 'thanks');
+  const success = document.getElementById('ct-success');
+  if (success) success.style.display = 'none';
+  applyText();
+}
+
+function submitContact(mode = 'tech') {
+  let report;
+  if (mode === 'thanks') {
+    const msg = document.getElementById('th-msg').value.trim();
+    const name = document.getElementById('th-name').value.trim();
+    const phone = document.getElementById('th-phone').value.trim();
+    if (!msg || !name || !phone) {
+      alert(T('يرجى كتابة الرسالة والاسم ورقم الهاتف', 'Please write the message, name, and phone number'));
+      return;
+    }
+    report = {
+      id: Date.now(),
+      recordType: 'contact_message',
+      category: 'thanks_suggestion',
+      messageType: document.getElementById('th-type').value,
+      msg,
+      name,
+      phone,
+      email: document.getElementById('th-email').value.trim(),
+      area: document.getElementById('th-area').value.trim(),
+      date: new Date().toISOString(),
+      status: 'جديد'
+    };
+    ['th-msg','th-name','th-phone','th-email','th-area'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  } else {
+    const type = document.getElementById('ct-type').value;
+    const msg  = document.getElementById('ct-msg').value.trim();
+    if (!type || !msg) {
+      alert(T('يرجى اختيار النوع وكتابة رسالتك', 'Please select type and write your message'));
+      return;
+    }
+    report = {
+      id: Date.now(),
+      recordType: 'contact_message',
+      category: 'technical_report',
+      messageType: type,
+      msg,
+      name: document.getElementById('ct-name').value.trim(),
+      phone: document.getElementById('ct-phone').value.trim(),
+      date: new Date().toISOString(),
+      status: 'جديد'
+    };
+    ['ct-type','ct-msg','ct-name','ct-phone'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  }
+
+  S.reports.push(report);
   localStorage.setItem('shg_reports', JSON.stringify(S.reports));
-  if (success) { success.style.display = 'block'; setTimeout(()=>success.style.display='none', 2500); }
+  S.notifs.push({ id: Date.now() + 1, type: 'new_report', titleAr: mode === 'thanks' ? 'رسالة شكر / اقتراح جديدة' : 'بلاغ تقني جديد', read: false, date: new Date().toISOString() });
+  localStorage.setItem('shg_notifs', JSON.stringify(S.notifs));
+
+  shgTrack('contact_submit', { contact_type: report.category, message_type: report.messageType });
+  sendToGoogleSheet(report);
+
+  const success = document.getElementById('ct-success');
+  if (success) success.style.display = 'block';
+  alert(T('تم استلام رسالتك بنجاح من داخل التطبيق. شكرًا لمساهمتك.', 'Your message has been submitted inside the app. Thank you.'));
 }
 
 // ===== ADMIN =====
@@ -1395,7 +1379,7 @@ function renderAdminTab() {
     localStorage.setItem('shg_notifs', JSON.stringify(S.notifs));
     let h = S.reports.length === 0
       ? `<p style="color:var(--gray-400);text-align:center;padding:20px">${T('لا توجد بلاغات بعد', 'No reports yet')}</p>`
-      : S.reports.slice().reverse().map(r => `<div class="info-card" style="margin-bottom:8px"><b>${r.type}</b><p>${r.msg}</p>${r.name ? `<p style="font-size:13px;color:var(--gray-600)">${r.name}</p>` : ''}<p style="font-size:11px;color:var(--gray-400)">${new Date(r.date).toLocaleDateString()}</p></div>`).join('');
+      : S.reports.slice().reverse().map(r => `<div class="info-card" style="margin-bottom:8px"><b>${r.type}</b><p>${r.msg}</p>${r.name ? `<p style="font-size:13px;color:var(--gray-600)">${r.name}${r.phone ? " · "+r.phone : ""}</p>` : ''}<p style="font-size:11px;color:var(--gray-400)">${new Date(r.date).toLocaleDateString()}</p></div>`).join('');
     c.innerHTML = h + `<p style="font-size:12px;color:var(--gray-400);text-align:center;margin-top:10px">${T('ربط البلاغات بـ Supabase لاحقاً', 'Reports Supabase connection coming later')}</p>`;
 
   } else if (admTab === 'facilities') {
@@ -1478,19 +1462,29 @@ function playClick() {
 
 // ===== APP RATING =====
 function submitRating(type) {
-   const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScm9orJGWGWHXd_UfbQ3Qzt_YN_8Tq4GTP2pj_wHSOFgCP1mg/viewform?usp=publish-editor";
-
-  if (typeof gtag === "function") {
-    gtag("event", "rating_click", {
-      rating: type === "happy" ? "راضي" : "غير راضي"
-    });
-  }
-
-  window.open(feedbackFormUrl, "_blank");
   const happy = document.getElementById('rating-happy');
   const sad   = document.getElementById('rating-sad');
   const confirm = document.getElementById('rating-confirm');
   if (!happy || !sad || !confirm) return;
+
+  const ratingValue = type === 'happy' ? 'راضي' : 'غير راضي';
+
+  // تسجيل التقييم في Google Analytics كرقم/حدث فقط.
+  shgTrack('rating_click', { rating: ratingValue });
+
+  // حفظ نسخة محلية داخل التطبيق.
+  const savedRatings = JSON.parse(localStorage.getItem('shg_ratings') || '[]');
+  const ratingRecord = {
+    id: Date.now(),
+    recordType: 'app_rating',
+    rating: ratingValue,
+    date: new Date().toISOString()
+  };
+  savedRatings.push(ratingRecord);
+  localStorage.setItem('shg_ratings', JSON.stringify(savedRatings));
+
+  // إرسال التقييم إلى Google Sheet بعد تركيب رابط Apps Script.
+  sendToGoogleSheet(ratingRecord);
 
   // Reset both
   happy.classList.remove('selected');

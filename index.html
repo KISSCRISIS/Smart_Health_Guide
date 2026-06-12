@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-XMNKH40897');
 </script>
   <meta charset="UTF-8">
@@ -94,16 +93,15 @@
   </div>
 
   <div class="home-service-strip">
-    <button class="home-strip-btn" onclick="playClick();go('s-medical-journal')">
-      <span>📚</span>
-      <b data-ar="المجلة الطبية" data-en="Medical Journal"></b>
-    </button>
-    <button class="home-strip-btn" onclick="playClick();go('s-emergency-find')">
+    <button class="home-location-pill" onclick="playClick();go('s-emergency-find')">
       <span>📍</span>
-      <b data-ar="الرجاء تفعيل موقعك" data-en="Please enable your location"></b>
+      <span><b data-ar="الرجاء تفعيل موقعك" data-en="Please enable your location"></b><small data-ar="لتحسين الخدمة المقدمة فقط" data-en="Only to improve the provided service"></small></span>
+    </button>
+    <button class="home-journal-pill" onclick="playClick();go('s-library')">
+      <span>📚</span>
+      <span data-ar="المجلة الطبية" data-en="Medical Journal"></span>
     </button>
   </div>
-  <div class="home-location-note" data-ar="لتحسين الخدمة المقدمة فقط" data-en="Only to improve the provided service"></div>
 
   <div class="disc-box">
     <b data-ar="⚠️ تنبيه:" data-en="⚠️ Notice:"></b>
@@ -116,37 +114,31 @@
       <span class="home-btn-text" data-ar="اختر استفسارك من هنا 👈" data-en="Choose Your Inquiry Here 👈"></span>
       <span class="home-btn-arrow">›</span>
     </button>
-
     <button class="home-btn home-btn-secondary" onclick="playClick();go('s-emergency-find')">
       <span class="home-btn-icon">📍</span>
-      <span class="home-btn-text" data-ar="ما هي أقرب منشأة طبية مني؟" data-en="What is the nearest medical facility?"></span>
+      <span class="home-btn-text" data-ar="ما هي أقرب منشأة طبية مني؟" data-en="What is the Nearest Medical Facility?"></span>
       <span class="home-btn-arrow">›</span>
     </button>
-
     <button class="home-btn home-btn-secondary" onclick="playClick();go('s-er-vs-center')">
       <span class="home-btn-icon">🚦</span>
       <span class="home-btn-text" data-ar="الطوارئ أم المركز الصحي؟" data-en="Emergency or Health Center?"></span>
       <span class="home-btn-arrow">›</span>
     </button>
-
     <button class="home-btn home-btn-outline" onclick="playClick();go('s-library')">
       <span class="home-btn-icon">📚</span>
       <span class="home-btn-text" data-ar="مكتبة التوعية الصحية" data-en="Health Education Library"></span>
       <span class="home-btn-arrow">›</span>
     </button>
-
     <button class="home-btn home-btn-outline" onclick="playClick();go('s-supervision')">
       <span class="home-btn-icon">🏛️</span>
       <span class="home-btn-text" data-ar="الجهات الرسمية والقيادات الداعمة" data-en="Official Bodies & Supporting Leaders"></span>
       <span class="home-btn-arrow">›</span>
     </button>
-
     <button class="home-btn home-btn-outline" onclick="playClick();go('s-about')">
       <span class="home-btn-icon">ℹ️</span>
       <span class="home-btn-text" data-ar="عن التطبيق والروابط الرسمية" data-en="About & Official Links"></span>
       <span class="home-btn-arrow">›</span>
     </button>
-
     <button class="home-btn home-btn-admin" onclick="playClick();go('s-admin-login')">
       <span class="home-btn-icon">🔐</span>
       <span class="home-btn-text" data-ar="دخول المشرفين والمسؤولين" data-en="Admins & Supervisors Login"></span>
@@ -329,49 +321,6 @@
   </div>
 </div>
 
-
-<!-- ===== SCREEN: ER VS HEALTH CENTER ===== -->
-<div id="s-er-vs-center" class="screen">
-  <div class="top-bar">
-    <button class="icon-btn" onclick="back()">←</button>
-    <span class="bar-title" data-ar="الطوارئ أم المركز الصحي؟" data-en="Emergency or Health Center?"></span>
-    <button class="icon-btn" onclick="home()">🏠</button>
-  </div>
-  <div class="content er-center-page">
-    <div class="info-card er-intro-card">
-      <h2 data-ar="اختر الجهة الأنسب حسب حالتك" data-en="Choose the most suitable destination"></h2>
-      <p data-ar="هذا الدليل يساعدك على التمييز بين الطوارئ، المركز الصحي، والعيادات، دون أن يكون بديلًا عن تقييم الطبيب." data-en="This guide helps distinguish emergency, health center, and clinics. It is not a substitute for medical assessment."></p>
-    </div>
-
-    <button class="er-choice-card er-emergency" onclick="showErVsCenterDetail('emergency')">
-      <span class="er-choice-icon">🚨</span>
-      <span class="er-choice-title" data-ar="الطوارئ:" data-en="Emergency:"></span>
-      <span class="er-choice-text" data-ar="للحالات الخطيرة أو المفاجئة مثل ألم الصدر، ضيق النفس الشديد، فقدان الوعي، النزيف الشديد، أعراض الجلطات أو الحوادث." data-en="For serious or sudden conditions such as chest pain, severe shortness of breath, loss of consciousness, severe bleeding, stroke signs, or accidents."></span>
-      <span class="er-choice-more" data-ar="اضغط للتفاصيل" data-en="Tap for details"></span>
-    </button>
-
-    <button class="er-choice-card er-center" onclick="showErVsCenterDetail('center')">
-      <span class="er-choice-icon">🏥</span>
-      <span class="er-choice-title" data-ar="المركز الصحي:" data-en="Health Center:"></span>
-      <span class="er-choice-text" data-ar="للحالات البسيطة أو المتوسطة والمتابعة، مثل الرشح، الحرارة الخفيفة، تجديد الوصفات، المطاعيم، ومتابعة الأمراض المزمنة المستقرة." data-en="For mild/moderate cases and follow-up, such as colds, mild fever, prescription refills, vaccines, and stable chronic disease follow-up."></span>
-      <span class="er-choice-more" data-ar="اضغط للتفاصيل" data-en="Tap for details"></span>
-    </button>
-
-    <button class="er-choice-card er-clinic" onclick="showErVsCenterDetail('clinic')">
-      <span class="er-choice-icon">🩺</span>
-      <span class="er-choice-title" data-ar="العيادات المسائية / الخارجية:" data-en="Evening / Outpatient Clinics:"></span>
-      <span class="er-choice-text" data-ar="للمواعيد، مراجعة النتائج، المتابعة التخصصية، التحويلات، والأدوية التخصصية التي تحتاج طبيب اختصاص." data-en="For appointments, result follow-up, specialist care, referrals, and specialty medications requiring a specialist."></span>
-      <span class="er-choice-more" data-ar="اضغط للتفاصيل" data-en="Tap for details"></span>
-    </button>
-
-    <div id="er-vs-detail"></div>
-    <div class="nav-actions">
-      <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to previous page"></span></button>
-      <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to home"></span></button>
-    </div>
-  </div>
-</div>
-
 <!-- ===== SCREEN: FIND EMERGENCY ===== -->
 <div id="s-emergency-find" class="screen">
   <div class="top-bar">
@@ -391,35 +340,48 @@
   </div>
 </div>
 
-
-<!-- ===== SCREEN: COMPREHENSIVE MEDICAL JOURNAL ===== -->
-<div id="s-medical-journal" class="screen">
+<!-- ===== SCREEN: EMERGENCY OR HEALTH CENTER ===== -->
+<div id="s-er-vs-center" class="screen">
   <div class="top-bar">
     <button class="icon-btn" onclick="back()">←</button>
-    <span class="bar-title" data-ar="المجلة الطبية الشاملة" data-en="Comprehensive Medical Journal"></span>
+    <span class="bar-title" data-ar="الطوارئ أم المركز الصحي؟" data-en="Emergency or Health Center?"></span>
     <button class="icon-btn" onclick="home()">🏠</button>
   </div>
-  <div class="content med-journal-page">
-    <div class="med-journal-hero">
-      <h2 data-ar="المجلة الطبية الشاملة" data-en="Comprehensive Medical Journal"></h2>
-      <p data-ar="اختر القسم الذي تريد الاطلاع عليه. هذا القسم منفصل عن مكتبة التوعية الصحية، ويشرح الخدمات الطبية غير الطارئة بطريقة منظمة." data-en="Choose the topic you want. This section is separate from the health education library and explains non-emergency medical services."></p>
+  <div class="content care-choice-page">
+    <h2 class="screen-title" data-ar="اختر الجهة الأنسب حسب حالتك" data-en="Choose the most suitable destination"></h2>
+    <p class="screen-sub" data-ar="هذا الدليل يساعدك على التمييز بين الطوارئ، المركز الصحي، والعيادات دون أن يكون بديلاً عن تقييم الطبيب." data-en="This guide helps distinguish emergency, health center, and clinics without replacing medical evaluation."></p>
+    <button class="care-choice-card care-emergency" onclick="showCareDetail('emergency')">
+      <span class="care-icon">🚨</span>
+      <span class="care-text"><b data-ar="الطوارئ:" data-en="Emergency:"></b><small data-ar="للحالات الخطيرة أو المفاجئة مثل ألم الصدر، ضيق النفس، النزيف، فقدان الوعي، أو الحوادث." data-en="For serious or sudden conditions such as chest pain, shortness of breath, bleeding, loss of consciousness, or trauma."></small></span>
+      <span class="home-btn-arrow">›</span>
+    </button>
+    <button class="care-choice-card care-center" onclick="showCareDetail('center')">
+      <span class="care-icon">🏥</span>
+      <span class="care-text"><b data-ar="المركز الصحي:" data-en="Health Center:"></b><small data-ar="للحالات البسيطة أو المتوسطة، المتابعة، المطاعيم، وتجديد أدوية الأمراض المزمنة المستقرة." data-en="For mild/moderate cases, follow-up, vaccines, and stable chronic medication refills."></small></span>
+      <span class="home-btn-arrow">›</span>
+    </button>
+    <button class="care-choice-card care-clinic" onclick="showCareDetail('clinic')">
+      <span class="care-icon">🩺</span>
+      <span class="care-text"><b data-ar="العيادات المسائية / الخارجية:" data-en="Evening / Outpatient Clinics:"></b><small data-ar="للمواعيد، مراجعة النتائج، المتابعة التخصصية، الأدوية التخصصية، والتحويلات." data-en="For appointments, results follow-up, specialist care, specialized medications, and referrals."></small></span>
+      <span class="home-btn-arrow">›</span>
+    </button>
+    <div class="quick-note-box">
+      <b data-ar="الطوارئ ليست الطريق الأسرع لكل الخدمات" data-en="Emergency is not the fastest route for every service"></b>
+      <p data-ar="في الطوارئ تكون الأولوية للحالات الحرجة. للحالات غير الطارئة قد يكون المركز الصحي أو العيادات أسرع وأنسب." data-en="In emergency departments, priority goes to critical cases. For non-emergency needs, a health center or clinic may be faster and more suitable."></p>
     </div>
-    <div class="nav-actions top-nav-actions">
-      <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to previous page"></span></button>
-      <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to home"></span></button>
-    </div>
-    <div id="medical-journal-grid" class="med-topic-grid"></div>
+    <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to Previous Page"></span></button>
+    <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to Home"></span></button>
   </div>
 </div>
 
-<!-- ===== SCREEN: MEDICAL JOURNAL TOPIC ===== -->
-<div id="s-medical-topic" class="screen">
+<!-- ===== SCREEN: CARE DETAIL ===== -->
+<div id="s-care-detail" class="screen">
   <div class="top-bar">
     <button class="icon-btn" onclick="back()">←</button>
-    <span class="bar-title" data-ar="المجلة الطبية الشاملة" data-en="Medical Journal"></span>
+    <span class="bar-title" id="care-detail-title"></span>
     <button class="icon-btn" onclick="home()">🏠</button>
   </div>
-  <div class="content" id="medical-topic-detail"></div>
+  <div class="content" id="care-detail-content"></div>
 </div>
 
 <!-- ===== SCREEN: LIBRARY ===== -->
@@ -486,76 +448,81 @@
     <span class="bar-title" data-ar="عن التطبيق والروابط الرسمية" data-en="About & Official Links"></span>
     <button class="icon-btn" onclick="home()">🏠</button>
   </div>
-  <div class="about-hero about-hero-two-logos">
-    <div class="about-logo-pair">
-      <img src="moh_jordan_logo.jpg" alt="وزارة الصحة الأردنية" class="about-logo-img about-logo-moh">
-      <img src="smart_health_guide_logo_small.jpg" alt="دليل الصحة الذكي" class="about-logo-img about-logo-app">
+  <div class="about-hero about-hero-logos">
+    <div class="about-logo-row">
+      <img src="smart_health_guide_logo_small.jpg" alt="دليل الصحة الذكي" class="about-logo-img app-logo-fit">
+      <img src="moh_jordan_logo.jpg" alt="وزارة الصحة الأردنية" class="about-logo-img moh-logo-fit">
     </div>
     <div class="about-title">دليل الصحة الذكي | Smart Health Guide</div>
     <div class="about-sub">وزارة الصحة الأردنية | Ministry of Health of Jordan</div>
   </div>
-  <div class="content about-content-clean">
+  <div class="content">
     <div class="info-card">
       <b data-ar="عن المشروع" data-en="About the Project"></b>
-      <p data-ar="مشروع توعوي وإرشادي يساعد المراجعين على فهم درجة الخطورة الأولية للحالة الصحية والتوجه إلى الجهة الطبية الأنسب، بما يساهم في رفع الوعي الصحي وتقليل أوقات الانتظار." data-en="An awareness and guidance project that helps users understand the initial urgency level and choose the most suitable healthcare destination, supporting health awareness and reducing wait times."></p>
+      <p data-ar="مشروع توعوي لتوجيه المراجعين إلى الطريق الأنسب للحصول على رعاية صحية مثلى، ولإظهار المنشآت الطبية العاملة بناءً على اليوم والوقت في الأردن، والمساهمة في زيادة الوعي الصحي وتقليل أوقات الانتظار." data-en="An awareness project to guide users to the most appropriate healthcare destination in Jordan, show active medical facilities by day and time, and improve public health awareness while reducing waiting times."></p>
     </div>
-    <div class="info-card idea-card">
-      <b data-ar="فكرة وإعداد المحتوى التوعوي" data-en="Concept and Awareness Content Preparation"></b>
-      <p class="idea-name">د. علاء الأصفر</p>
-      <p data-ar="طبيب طوارئ – وزارة الصحة الأردنية" data-en="Emergency Physician – Ministry of Health of Jordan"></p>
-      <p data-ar="صاحب فكرة مشروع دليل الصحة الذكي" data-en="Creator of the Smart Health Guide project"></p>
+    <div class="info-card">
+      <b data-ar="فكرة وإعداد المحتوى التوعوي" data-en="Concept & Health Awareness Content"></b>
+      <p style="text-align:center;font-size:18px;font-weight:900;color:#b91c1c;">د. علاء الأصفر</p>
+      <p style="text-align:center" data-ar="طبيب طوارئ – وزارة الصحة الأردنية" data-en="Emergency Physician – Ministry of Health of Jordan"></p>
+      <p style="text-align:center" data-ar="صاحب فكرة مشروع دليل الصحة الذكي" data-en="Founder of the Smart Health Guide project idea"></p>
     </div>
     <div class="info-card official-links-card">
       <b data-ar="الروابط الرسمية" data-en="Official Links"></b>
-      <p data-ar="للمتابعة والأخبار الرسمية والتحديثات الصادرة عن المستشفى." data-en="For official updates, news, and announcements issued by the hospital."></p>
-      <a href="https://facebook.com/AlBasheerER" target="_blank" class="btn btn-primary">📘 <span data-ar="الصفحة الرسمية لمستشفى الإسعاف والطوارئ / البشير" data-en="Official page of Al-Bashir Emergency Hospital"></span></a>
+      <p data-ar="للمتابعة والأخبار الرسمية والتحديثات الصادرة عن المستشفى." data-en="For official updates, news, and announcements from the hospital."></p>
+      <a id="fb-about-official" href="https://facebook.com/AlBasheerER" target="_blank" class="btn btn-facebook">📘 <span data-ar="الصفحة الرسمية لمستشفى الإسعاف والطوارئ / البشير" data-en="Official Page of Al-Bashir Ambulance & Emergency Hospital"></span></a>
     </div>
     <div class="disc-box">
-      <b data-ar="⚠️ تنويه طبي مهم" data-en="⚠️ Important Medical Notice"></b>
-      <span data-ar="هذا التطبيق لأغراض التوعية والإرشاد فقط، ولا يُعد بديلًا عن التقييم الطبي المباشر أو الاتصال بالطوارئ. في حال وجود أعراض شديدة أو مفاجئة، يُرجى طلب المساعدة الطبية فورًا أو الاتصال بالطوارئ." data-en="This app is for awareness and guidance only and is not a substitute for direct medical evaluation or emergency calls. If severe or sudden symptoms occur, seek medical help immediately or call emergency services."></span>
+      <b data-ar="⚠️ إخلاء مسؤولية" data-en="⚠️ Disclaimer"></b>
+      <span data-ar="هذا التطبيق للتوعية والمساعدة فقط، ولا يُعتبر تشخيصًا طبيًا أو قرار فرز طبي رسميًا أو بديلًا عن الطبيب." data-en="This app is for awareness and support only. It is not a medical diagnosis, not an official triage decision, and not a substitute for a doctor."></span>
     </div>
     <a href="tel:911" class="btn btn-red">📞 <span data-ar="اتصل بـ 911" data-en="Call 911"></span></a>
+
+    <!-- App Rating Section -->
     <div class="rating-section">
       <div class="rating-title" data-ar="تقييمك للتطبيق" data-en="Rate This App"></div>
       <div class="rating-btns" id="rating-btns">
-        <button class="rating-btn rating-happy" onclick="submitRating('happy')" id="rating-happy"><span class="rating-emoji">😊</span><span data-ar="راضي" data-en="Satisfied"></span></button>
-        <button class="rating-btn rating-sad" onclick="submitRating('sad')" id="rating-sad"><span class="rating-emoji">😞</span><span data-ar="غير راضي" data-en="Not Satisfied"></span></button>
+        <button class="rating-btn rating-happy" onclick="submitRating('happy')" id="rating-happy">
+          <span class="rating-emoji">😊</span>
+          <span data-ar="راضي" data-en="Satisfied"></span>
+        </button>
+        <button class="rating-btn rating-sad" onclick="submitRating('sad')" id="rating-sad">
+          <span class="rating-emoji">😞</span>
+          <span data-ar="غير راضي" data-en="Not Satisfied"></span>
+        </button>
       </div>
       <div id="rating-confirm" class="rating-confirm" style="display:none" data-ar="شكراً لتقييمك" data-en="Thank you for your rating"></div>
     </div>
-    <div class="nav-actions">
-      <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to previous page"></span></button>
-      <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to home"></span></button>
-    </div>
+
+    <button class="btn btn-primary" onclick="home()" style="margin-top:8px">
+      🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to Home"></span>
+    </button>
+    <p class="footer-copy">© Smart Health Guide | دليل الصحة الذكي — Dr. Alaa Al-Asfar, Ministry of Health of Jordan.</p>
   </div>
 </div>
 
 <!-- ===== SCREEN: SUPERVISION (PUBLIC) ===== -->
-<div id="s-supervision" class="screen no-watermark-screen">
+<div id="s-supervision" class="screen">
   <div class="top-bar">
     <button class="icon-btn" onclick="back()">←</button>
     <span class="bar-title" data-ar="الجهات الرسمية والقيادات الداعمة" data-en="Official Bodies & Supporting Leaders"></span>
     <button class="icon-btn" onclick="home()">🏠</button>
   </div>
-  <div class="content supervision-modern">
-    <div class="supervision-title-box">
-      <h2 data-ar="الجهات الرسمية والقيادات الداعمة" data-en="Official Bodies & Supporting Leaders"></h2>
-      <p data-ar="قيادات داعمة للتكامل الصحي والرقمي في مشروع دليل الصحة الذكي" data-en="Supporting leadership for health and digital integration in the Smart Health Guide project"></p>
-    </div>
-    <div class="leader-card leader-main">
+  <div class="content leadership-page">
+    <h2 class="screen-title" data-ar="الجهات الرسمية والقيادات الداعمة" data-en="Official Bodies & Supporting Leaders"></h2>
+    <p class="screen-sub" data-ar="قيادات داعمة للتكامل الصحي والرقمي في مشروع دليل الصحة الذكي." data-en="Supporting leaders for health and digital integration in the Smart Health Guide project."></p>
+    <div class="leader-feature-card">
       <h3>د. عاطف النمورة</h3>
       <p>مدير إدارة مستشفيات البشير</p>
     </div>
-    <div class="leader-grid">
-      <div class="leader-card"><h3>د. عماد أبو اليقين</h3><p>مدير مركز الصحة الرقمية الأردني</p><p>رئيس اختصاص طب الطوارئ والحوادث في وزارة الصحة</p></div>
-      <div class="leader-card"><h3>د. حسام المرازيق</h3><p>مدير مستشفى الإسعاف والطوارئ</p></div>
-      <div class="leader-card"><h3>د. سليمان أبو عواد</h3><p>مساعد المدير للشؤون الطبية والإدارية</p></div>
-      <div class="leader-card"><h3>د. حسن شحاده</h3><p>رئيس قسم الإسعاف والطوارئ التنفيذي</p></div>
+    <div class="leaders-grid">
+      <div class="leader-card leader-blue"><h3>د. عماد أبو اليقين</h3><p>مدير مركز الصحة الرقمية الأردني</p><p>رئيس اختصاص طب الطوارئ والحوادث في وزارة الصحة</p></div>
+      <div class="leader-card leader-teal"><h3>د. حسام المرازيق</h3><p>مدير مستشفى الإسعاف والطوارئ والعيادات الخارجية.</p></div>
+      <div class="leader-card leader-purple"><h3>د. سليمان أبو عواد</h3><p>مساعد المدير للشؤون الطبية والإدارية</p></div>
+      <div class="leader-card leader-green"><h3>د. حسن شحاده</h3><p>رئيس قسم الإسعاف والطوارئ التنفيذي</p></div>
     </div>
-    <div class="nav-actions">
-      <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to previous page"></span></button>
-      <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to home"></span></button>
-    </div>
+    <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to Previous Page"></span></button>
+    <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to Home"></span></button>
   </div>
 </div>
 
@@ -566,37 +533,35 @@
     <span class="bar-title" data-ar="تواصل معنا" data-en="Contact Us"></span>
     <button class="icon-btn" onclick="home()">🏠</button>
   </div>
-  <div class="content contact-modern">
-    <div class="info-card card-red"><b data-ar="⚠️ هذه الصفحة للملاحظات فقط — في الطوارئ اتصل بـ 911 فورًا" data-en="⚠️ This page is for feedback only — In emergencies call 911 immediately"></b></div>
+  <div class="content contact-page">
+    <h2 class="screen-title" data-ar="كيف يمكننا مساعدتك؟" data-en="How can we help you?"></h2>
+    <p class="screen-sub" data-ar="اختر نوع الرسالة المناسب حتى تصل ملاحظتك إلى المكان الصحيح." data-en="Choose the proper message type so your note reaches the right place."></p>
     <div class="contact-tabs">
-      <button id="ct-tab-tech" class="contact-tab active" onclick="setContactMode('tech')" data-ar="بلاغ تقني" data-en="Technical Report"></button>
-      <button id="ct-tab-thanks" class="contact-tab" onclick="setContactMode('thanks')" data-ar="رسالة شكر / اقتراح" data-en="Thanks / Suggestion"></button>
+      <button class="contact-tab active" id="tab-tech" onclick="showContactPanel('tech')" data-ar="بلاغ تقني" data-en="Technical Report"></button>
+      <button class="contact-tab" id="tab-thanks" onclick="showContactPanel('thanks')" data-ar="رسالة شكر / اقتراح" data-en="Thanks / Suggestion"></button>
     </div>
-
-    <div id="contact-tech-form" class="contact-form-panel active">
-      <h2 data-ar="بلاغ تقني" data-en="Technical Report"></h2>
-      <p data-ar="استخدم هذا النموذج للمشاكل التقنية أو أخطاء المعلومات داخل التطبيق." data-en="Use this form for technical issues or incorrect app information."></p>
+    <div id="panel-tech" class="contact-panel active">
+      <div class="info-card card-red"><b data-ar="⚠️ للبلاغات التقنية فقط — في الطوارئ اتصل بـ 911 فورًا" data-en="⚠️ Technical reports only — In emergencies call 911 immediately"></b></div>
       <div class="form-group"><label data-ar="نوع البلاغ" data-en="Report Type"></label><select id="ct-type"><option value="" data-ar="اختر النوع" data-en="Select type"></option><option value="tech" data-ar="مشكلة تقنية" data-en="Technical issue"></option><option value="gps" data-ar="مشكلة GPS" data-en="GPS problem"></option><option value="maps" data-ar="رابط خرائط" data-en="Maps link issue"></option><option value="phone" data-ar="رقم هاتف خاطئ" data-en="Wrong phone number"></option><option value="facility" data-ar="خطأ في منشأة" data-en="Facility error"></option><option value="content" data-ar="ملاحظة على محتوى" data-en="Content note"></option><option value="other" data-ar="أخرى" data-en="Other"></option></select></div>
-      <div class="form-group"><label data-ar="رسالتك" data-en="Your Message"></label><textarea id="ct-msg" rows="4"></textarea></div>
+      <div class="form-group"><label data-ar="تفاصيل البلاغ" data-en="Report Details"></label><textarea id="ct-msg" rows="4"></textarea></div>
       <div class="form-group"><label data-ar="اسمك (اختياري)" data-en="Your Name (optional)"></label><input type="text" id="ct-name"></div>
+      <div class="form-group"><label data-ar="رقم الهاتف (اختياري)" data-en="Phone Number (optional)"></label><input type="tel" id="ct-phone"></div>
       <button class="btn btn-primary" onclick="submitContact('tech')"><span data-ar="إرسال البلاغ" data-en="Submit Report"></span></button>
     </div>
-
-    <div id="contact-thanks-form" class="contact-form-panel">
-      <h2 data-ar="رسالة شكر / اقتراح" data-en="Thanks / Suggestion"></h2>
-      <p data-ar="نرحب برسائل الشكر والاقتراحات والملاحظات العامة التي تساعدنا على تطوير التطبيق." data-en="We welcome thanks, suggestions, and general feedback to improve the app."></p>
-      <div class="form-group"><label data-ar="نوع الرسالة" data-en="Message Type"></label><select id="ct-thanks-type"><option value="thanks" data-ar="شكر" data-en="Thanks"></option><option value="suggestion" data-ar="اقتراح" data-en="Suggestion"></option><option value="experience" data-ar="تجربة مراجع" data-en="Visitor experience"></option><option value="general" data-ar="ملاحظة عامة" data-en="General note"></option></select></div>
-      <div class="form-group"><label data-ar="نص الرسالة" data-en="Message"></label><textarea id="ct-thanks-msg" rows="4"></textarea></div>
-      <div class="form-group"><label data-ar="الاسم الكامل" data-en="Full Name"></label><input type="text" id="ct-thanks-name"></div>
-      <div class="form-group"><label data-ar="رقم الهاتف" data-en="Phone Number"></label><input type="tel" id="ct-thanks-phone"></div>
-      <div class="form-group"><label data-ar="البريد الإلكتروني (اختياري)" data-en="Email (optional)"></label><input type="email" id="ct-thanks-email"></div>
-      <div class="form-group"><label data-ar="المدينة / المنطقة (اختياري)" data-en="City / Area (optional)"></label><input type="text" id="ct-thanks-area"></div>
+    <div id="panel-thanks" class="contact-panel">
+      <div class="info-card card-green"><b data-ar="رسالة شكر / اقتراح" data-en="Thanks / Suggestion"></b><p data-ar="نرحب برسائل الشكر والاقتراحات والملاحظات العامة التي تساعدنا على تطوير التطبيق وتحسين تجربة المراجعين." data-en="We welcome thanks, suggestions, and general notes that help improve the app and visitor experience."></p></div>
+      <div class="form-group"><label data-ar="نوع الرسالة" data-en="Message Type"></label><select id="th-type"><option value="thanks" data-ar="شكر" data-en="Thanks"></option><option value="suggestion" data-ar="اقتراح" data-en="Suggestion"></option><option value="experience" data-ar="تجربة مراجع" data-en="Visitor experience"></option><option value="general" data-ar="ملاحظة عامة" data-en="General note"></option></select></div>
+      <div class="form-group"><label data-ar="نص الرسالة" data-en="Message"></label><textarea id="th-msg" rows="5"></textarea></div>
+      <div class="form-group"><label data-ar="الاسم الكامل" data-en="Full Name"></label><input type="text" id="th-name"></div>
+      <div class="form-group"><label data-ar="رقم الهاتف" data-en="Phone Number"></label><input type="tel" id="th-phone"></div>
+      <div class="form-group"><label data-ar="البريد الإلكتروني (اختياري)" data-en="Email (optional)"></label><input type="email" id="th-email"></div>
+      <div class="form-group"><label data-ar="المدينة / المنطقة (اختياري)" data-en="City / Area (optional)"></label><input type="text" id="th-area"></div>
       <button class="btn btn-primary" onclick="submitContact('thanks')"><span data-ar="إرسال الرسالة" data-en="Submit Message"></span></button>
     </div>
-
-    <div id="ct-success" class="info-card card-green" style="display:none"><b data-ar="✅ تم الإرسال — شكرًا لمساهمتك" data-en="✅ Submitted — Thank you for your feedback"></b></div>
-    <p style="font-size:12px;color:#94a3b8;margin-top:12px;text-align:center"><span data-ar="حفظ البيانات يحتاج قاعدة بيانات خارجية في المستقبل" data-en="Data saving needs external database in future"></span></p>
-    <div class="nav-actions"><button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to previous page"></span></button><button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to home"></span></button></div>
+    <div id="ct-success" class="info-card card-green" style="display:none"><b data-ar="✅ تم الإرسال — شكرًا لمساهمتك" data-en="✅ Submitted — Thank you"></b></div>
+    <p style="font-size:12px;color:#94a3b8;margin-top:12px;text-align:center" data-ar="يتم إرسال الرسائل من داخل التطبيق دون فتح روابط خارجية" data-en="Messages are submitted inside the app without opening external links"></p>
+    <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to Previous Page"></span></button>
+    <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to Home"></span></button>
   </div>
 </div>
 
@@ -604,16 +569,16 @@
 <div id="s-admin-login" class="screen">
   <div class="top-bar">
     <button class="icon-btn" onclick="back()">←</button>
-    <span class="bar-title" data-ar="دخول الإدارة" data-en="Admin Login"></span>
+    <span class="bar-title" data-ar="دخول المشرفين والمسؤولين" data-en="Admins & Supervisors Login"></span>
     <button class="icon-btn" onclick="home()">🏠</button>
   </div>
   <div class="content" style="max-width:380px;margin:0 auto">
     <div style="text-align:center;padding:20px 0">
       <div style="font-size:48px">🔐</div>
-      <h2 data-ar="دخول لوحة المشرفين والمسؤولين" data-en="Admins & Supervisors Login"></h2><p class="screen-sub" data-ar="هذه الصفحة مخصصة للمخولين فقط لإدارة محتوى التطبيق والبلاغات." data-en="Authorized personnel only for content and reports management."></p>
+      <h2 data-ar="دخول لوحة المشرفين والمسؤولين" data-en="Admins & Supervisors Dashboard Login"></h2><p class="screen-sub" data-ar="هذه الصفحة مخصصة للمخولين فقط لإدارة محتوى التطبيق والبلاغات." data-en="This page is for authorized users only to manage content and reports."></p>
     </div>
     <div class="form-group">
-      <label data-ar="اسم المستخدم" data-en="Username"></label>
+      <label data-ar="رقم المستخدم" data-en="User ID"></label>
       <input type="text" id="adm-user" autocomplete="off">
     </div>
     <div class="form-group">
@@ -624,10 +589,9 @@
     <button class="btn btn-primary" onclick="adminLogin()">
       <span data-ar="دخول" data-en="Login"></span>
     </button>
-    <div class="nav-actions" style="margin-top:12px">
-      <button class="btn btn-outline" onclick="back()">← <span data-ar="الرجوع إلى الصفحة السابقة" data-en="Back to previous page"></span></button>
-      <button class="btn btn-primary" onclick="home()">🏠 <span data-ar="العودة إلى الصفحة الرئيسية" data-en="Return to home"></span></button>
-    </div>
+    <button class="btn btn-outline" style="margin-top:8px" onclick="go('s-supervision')">
+      <span data-ar="عرض الجهات الرسمية والقيادات الداعمة" data-en="View Official Bodies & Supporting Leaders"></span>
+    </button>
     <!-- NOTE: Real auth needs Supabase/backend later -->
   </div>
 </div>
@@ -647,7 +611,10 @@
   </div>
 </div>
 
-<button class="floating-contact" onclick="playClick();go('s-contact')">💬 <span data-ar="تواصل معنا" data-en="Contact"></span></button>
+<button class="floating-contact-btn" onclick="playClick();go('s-contact')">
+  💬 <span data-ar="تواصل معنا / بلّغ عن مشكلة" data-en="Contact / Report"></span>
+</button>
+
 <script src="script.js"></script>
 </body>
 </html>
