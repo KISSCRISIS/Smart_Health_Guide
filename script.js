@@ -1478,6 +1478,15 @@ function playClick() {
 
 // ===== APP RATING =====
 function submitRating(type) {
+   const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLScm9orJGWGWHXd_UfbQ3Qzt_YN_8Tq4GTP2pj_wHSOFgCP1mg/viewform?usp=publish-editor";
+
+  if (typeof gtag === "function") {
+    gtag("event", "rating_click", {
+      rating: type === "happy" ? "راضي" : "غير راضي"
+    });
+  }
+
+  window.open(feedbackFormUrl, "_blank");
   const happy = document.getElementById('rating-happy');
   const sad   = document.getElementById('rating-sad');
   const confirm = document.getElementById('rating-confirm');
