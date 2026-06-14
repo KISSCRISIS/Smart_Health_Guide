@@ -2035,3 +2035,37 @@ function requestHomeLocation() {
   // تحويل زر تفعيل الموقع لنفس دالة الموقع الموجودة عند النتائج
   requestGPS();
 }
+// ================= دوال المواقع الجغرافية المفقودة =================
+function refreshLocationButtons() {
+    console.log("🔄 تحديث أزرار المواقع");
+    if (typeof initMap === 'function') {
+        initMap();
+    }
+    if (typeof S !== 'undefined' && S.userLat) {
+        const gpsBtn = document.querySelector('.home-btn[onclick*="requestGPS"]');
+        if (gpsBtn) gpsBtn.style.opacity = '0.8';
+    }
+}
+
+function requestHomeLocation() {
+    if (!navigator.geolocation) {
+        alert("المتصفح لا يدعم تحديد الموقع");
+        return;
+    }
+    navigator.geolocation.getCurrentPosition(
+        function(pos) {
+            alert(`📍 موقعك: ${pos.coords.latitude}, ${pos.coords.longitude}`);
+            if (typeof S !== 'undefined') {
+                S.userLat = pos.coords.latitude;
+                S.userLng = pos.coords.longitude;
+            } else {
+                window.userLat = pos.coords.latitude;
+                window.userLng = pos.coords.longitude;
+            }
+            if (typeof initMap === 'function') initMap();
+        },
+        function(err) {
+            alert("❌ فشل تحديد الموقع: " + err.message);
+        }
+    );
+}
