@@ -2026,3 +2026,12 @@ function initScreen(id) {
   };
   if (map[id]) map[id]();
 }
+function refreshLocationButtons() {
+  // دالة احتياطية حتى لا تتعطل الصفحة الرئيسية
+  applyText();
+}
+
+function requestHomeLocation() {
+  // تحويل زر تفعيل الموقع لنفس دالة الموقع الموجودة عند النتائج
+  requestGPS();
+}
